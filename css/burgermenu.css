@@ -1,0 +1,261 @@
+body {
+	/*
+  margin:0;
+  padding:0;
+  background:  linear-gradient(
+      rgba(0, 0, 0, 0.3),
+      rgba(0, 0, 0, 0.3)),url(img/home.png) no-repeat top fixed; 
+  -webkit-background-size: cover; /* pour anciens Chrome et Safari 
+  background-size: cover; /* version standardisée 
+  overflow: hidden;*/
+	position: relative;
+}
+
+.content {
+	padding-top: 0%;
+	padding-bottom: 0%;
+	transition-property: top, bottom;
+	transition-duration: .6s;
+	-webkit-transition-property: top, bottom;
+	-webkit-transition-duration: 2s;
+	top: 0;
+	bottom: 0;
+}
+
+.animatemain {
+	position: absolute!important;
+	top: 50vh!important;
+	transition-property: top, bottom;
+	transition-duration: .6s;
+	-webkit-transition-property: top, bottom;
+	-webkit-transition-duration: 2s;
+}
+
+.movebottom {
+	top: 58vh!important;
+}
+
+
+/**** ************************ Headermobile.HTML****************************/
+
+.button {
+	z-index: 1000;
+	width: 50px;
+	height: 50px;
+	box-sizing: border-box;
+	margin-top: 2%;
+	-webkit-tap-highlight-color: transparent;
+	margin-left: 3%;
+	position: fixed;
+	/**/
+}
+
+.barra {
+	display: block;
+	width: 27px;
+	height: 2px;
+	background: #cec6c8;
+	transition: .3s;
+	pointer-events: none;
+	margin-left: 3%;
+}
+
+.barra:nth-child(2) {
+	margin: 6px 0;
+	margin-left: 3%;
+}
+
+.open {
+	border-color: #cec6c8;
+}
+
+.open span {
+	background: #cec6c8;
+	;
+}
+
+.open .barra:first-child {
+	transform: translateY(7.5px) rotate(-45deg);
+}
+
+.open .barra:nth-child(2) {
+	transform: rotate(-45deg);
+	opacity: 0;
+}
+
+.open .barra:last-child {
+	transform: translateY(-7.5px) rotate(-135deg);
+}
+
+.nav {
+	width: 100%;
+	right: 0;
+	background: #f4f1ed;
+	opacity: 0;
+	transform: translateY(-100%);
+	transition: .6s;
+	height: 50vh;
+	position: absolute;
+	z-index: -1;
+}
+
+.open + .nav {
+	transform: none;
+	opacity: 1;
+}
+
+code {
+	color: transparent;
+	font-size: 0;
+}
+
+.nav li {
+	width: 95%;
+	background: none;
+	text-align: left;
+	margin-left: 2.5%;
+	padding: 2.5% 0 2.5% 0;
+}
+
+.navmobile {
+	display: none;
+
+	
+}
+
+.nav a {
+	opacity: 1;
+}
+
+.nav a {
+	text-decoration: none;
+	display: block;
+	letter-spacing: .4rem;
+	width: 100%;
+	letter-spacing: .1rem;
+	color: grey;
+	margin: 0 10% 0 10%;
+	font-size: 1.5rem;
+}
+
+.nav a:hover {
+	color: #e26b63;
+	text-decoration: none;
+	transition: .6s;
+}
+
+
+/*
+#me a {
+	border: none;
+	background: none;
+	text-decoration: none;
+	width: 100%;
+}
+
+#me {
+	margin-top: 7%;
+}
+*/
+
+.accordiontarget a {
+	font-size: 1rem;
+	padding: 0;
+	padding-top: 2%;
+}
+
+.accordiontarget li {
+	padding: 2.5% 0 2.5% 0;
+}
+
+.accordiontarget li:last-child {
+	padding-bottom: 0;
+}
+
+.accordiontarget {
+	position: absolute;
+	z-index: 0;
+	margin-top: 2%;
+	display: inline-block;
+	bottom: -10vh;
+	top: -0vh;
+	transition-property: height;
+	transition-duration: 0.5s;
+	-webkit-transition-property: top, bottom;
+	-webkit-transition-duration: 0.5s;
+	opacity: 0;
+	visibility: hidden;
+	height: 0;
+	overflow: hidden;
+	padding-bottom: 0;
+}
+
+.accordionopen {
+	bottom: 40vh !important;
+	display: block;
+	bottom: 40vh !important;
+	top: 4vh;
+	visibility: inherit;
+	opacity: 1;
+	height: 200%;
+	padding-bottom: 0;
+	padding-left: 10%;
+}
+
+.accordionmove {
+	top: 0px;
+	bottom: 5vh;
+	transition-property: top, bottom;
+	transition-duration: 0.5s;
+	-webkit-transition-property: top, bottom;
+	-webkit-transition-duration: 0.5s;
+	position:relative;
+}
+
+.move {
+	top: 16vh;
+	bottom: 100px;
+	
+}
+
+
+/**** ************************ Headermobile.HTML display****************************/
+
+@media (max-width: 800px) {
+	.navfull {
+		display: none;
+	}
+	.navmobile {
+		display: inherit;
+		position:fixed;
+		z-index: 10000;
+	}
+	.wrap {
+		margin-top: 10%;
+	}
+	#truckwrap {
+		margin-top: 10%;
+	}
+	#truckwrap .community {
+		top: 80%;
+	}
+	.accordionopen {
+		bottom: 40vh !important;
+		display: block;
+		bottom: 40vh !important;
+		visibility: inherit;
+		opacity: 1;
+		height: 300% !important;
+		padding-bottom: 0;
+		padding-left: 10%;
+	}
+	.move {
+		
+	}
+	.move:last-child {
+		margin-top: 3%;
+	}
+	.nav {
+		height: 85vh !important;
+	}
+}

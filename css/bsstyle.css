@@ -1,0 +1,16 @@
+/**** BACKGROUNDSLIDER ***/
+.backgroundslider img{
+display:block!important;
+position:absolute!important;
+}
+
+.backgroundslider{
+min-height: 100vh;
+overflow: hidden;
+position:relative;
+	
+}
+
+.currentslide {
+
+}
