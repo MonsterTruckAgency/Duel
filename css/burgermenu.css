@@ -226,9 +226,11 @@ code {
 		display: none;
 	}
 	.navmobile {
-		display: inherit;
-		position:fixed;
+		display: inline-block;
+		position: fixed;
 		z-index: 10000;
+		width: 100%;
+		height: 50%;
 	}
 	.wrap {
 		margin-top: 10%;
@@ -255,7 +257,5 @@ code {
 	.move:last-child {
 		margin-top: 3%;
 	}
-	.nav {
-		height: 85vh !important;
-	}
+	
 }
