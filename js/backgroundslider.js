@@ -1,70 +1,98 @@
-var exittime = 2000;
-var entrancetime = 2000;
-
-
-
-var slides = $(".backgroundslider img");
-
 var loopPictures;
-var i;
+var slideIndex;
+var slides;
 var currentSlide;
+var queudedSlides;
 
 //set z indexes //
-for (var n = 0; n <= slides.length - 1; n++) {
-	console.log(slides[n]);
-	$(slides[n]).css('z-index', slides.length - n - 1);
-
+function setSlider() {
+	slides = $(".backgroundslider img");
+	for (var slideIndex = 0; slideIndex <= slides.length - 1; slideIndex++) {
+		slides[slideIndex].style.opacity = "1";
+		$(slides[slideIndex]).css('z-index', slides.length - slideIndex - 1);
+	}
+	$(slides[0]).addClass('currentslide');
+	currentSlide = $(slides[0]);
+	//set first slide as currentSlide//
+	queudedSlides = $(slides).not('.currentslide');
+	queudedSlides.addClass('queudedslides');
 }
-//set first slide as currentSlide//
-$(slides[0]).addClass('currentslide');
-
-currentSlide = $(slides[0]);
 
 
 function toggleCurrentslide() {
+	// change z index of current slide to 0// 
+	$(currentSlide).css('z-index', 0);
+	currentSlide[0].style.opacity = "1";
+	// change z index of queuded slides //
+	for (var jindex = 0; jindex <= queudedSlides.length - 1; jindex++) {
 
-	currentSlide.css('z-index', 0);
-	var queudedSlides = $(slides).not('.currentslide');
-	for (var j = 0; j <= queudedSlides.length - 1; j++) {
+		var newZindex = parseInt($(queudedSlides[jindex]).css('z-index')) + 1;
+		
+		$(queudedSlides[jindex]).css('z-index', newZindex);
+	
+		
 
-		var currentZindex = parseInt($(queudedSlides[j]).css('z-index'));
-		console.log(currentZindex);
-		var newZindex = currentZindex + 1;
-		console.log(newZindex);
-		$(queudedSlides[j]).css('z-index', newZindex);
-		console.log($(queudedSlides[j]).css('z-index'));
+	}
+	
+	// update currentslide//
+	if (slideIndex < slides.length - 1) {
+		slideIndex++;
+		// set next slide//
+
+	} else {
+		slideIndex = 0;
+		// restart slider//
 
 	}
 	currentSlide.removeClass('currentslide');
-	// update currentslide//
-	if (i < slides.length - 1) {
-		i++;
-	} else {
-		i = 0;
-	}
-	currentSlide = $(slides[i]);
+	currentSlide.addClass('queudedslides');
+	currentSlide = $(slides[slideIndex]);
+	console.log(slideIndex);
+	currentSlide.removeClass('queudedslides');
 	currentSlide.addClass('currentslide');
+	for (var slidei = 0; slidei <= slides.length - 1; slidei++) {
+		slides[slidei].style.opacity = "1";
+		
+	}
 
 }
 
 
 function startLoop() {
-	i = 0;
+	slideIndex = 0;
 	loopPictures = setInterval(loop, 4000);
 
 }
 
 
-function loop() {
+function fadeOutAndCallback(image, callback) {
+	var opacity = 1;
+	image = image[0];
+	console.log(image);
+	var timer = setInterval(function () {
+		if (opacity < 0.1) {
+			clearInterval(timer);
+			callback(); //this executes the callback function!
+		}
+		image.style.opacity = opacity;
+		opacity -= 0.1;
+	}, 50);
+}
 
-	currentSlide.fadeOut(1000, function () {
+
+function loop() {
+	currentSlide = $('.currentslide');
+	queudedSlides = $(slides).not('.currentslide');
+	fadeOutAndCallback(currentSlide, function () {
 		toggleCurrentslide();
 	});
 
 }
-startLoop();
 
-$(window).load(function () { //startloop//
-	
+
+$(window).load(function () {
+
+	setSlider();
+	startLoop();
 
 });

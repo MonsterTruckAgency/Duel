@@ -66,7 +66,10 @@ z-index: 1000;
 color:#231f20;
 
 }
+#menu a:hover{
+color:grey!important;
 
+}
 #backhome{
   
   display:inline-block;
@@ -87,7 +90,7 @@ text-align: center;
  
   margin-top: 13%;
   color:black;
-  margin-bottom: 23%;
+  margin-bottom: 17%;
 
 }
 
@@ -120,6 +123,44 @@ font-weight: lighter;
   color:white!important;
 }
 
+/** community **/
+
+.communityicons {
+	font-size: 1.5vw;
+	text-align: right;
+	display: block;
+	text-align: left;
+	width: 100%;
+	margin-left: 25%;
+}
+
+.absolut {
+	position: absolute !important;
+	z-index: 2;
+	bottom: 18%;
+}
+
+.communityicons i {
+	line-height: 0;
+	padding: 0;
+	margin: 0;
+}
+
+.communityicons a {
+	margin: 2%;
+}
+
+.fa-facebook-square {
+	color: #cec6c8;
+}
+
+i.fa-instagram {
+	color: #cec6c8;
+}
+
+i.fa-twitter-square {
+	color: #cec6c8;
+}
 
  /***** HOME *******/
  #home{
@@ -726,6 +767,7 @@ padding-left: 10%;
     text-decoration: none;
 	
 	letter-spacing: 1vw;
+	display:none;
 }
 #contact .wrap{
     height: 100%;
@@ -810,33 +852,22 @@ padding-left: 10%;
 #emailduel{
    
 	box-sizing: border-box;
-	font-size: 1.7vw;
-	text-align:center;
-	width: 50%;
-	flex-grow:0;
-	align-self: center;
-	padding-top: 25%;
-     float:right;
-        letter-spacing: .5rem;
+
+	
+      
 }
 
 #footer{
     width: 100%;
 	text-align: center;
-    font-size: 1.2vw;
-    margin-top: 45%;
+    font-size: 1.5vw;
+    margin-top: 10%;
     letter-spacing: .2vw;
-    
-
-
-
-
-
+   
 }
 #footer li a{
 	text-decoration: none!important;
-	color:white;
-	
+	color:black;
 	display:inline-block;
 	
 }
@@ -845,5 +876,9 @@ padding-left: 10%;
 	padding: 2vw;
 }
 #footer p{
-	padding: 2.7vw;
+	padding: 2vw;
+	font-size:  1.2vw;
 }
+
+
+

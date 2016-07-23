@@ -64,7 +64,7 @@ $(window).scroll(function () {
 
 	// LETTER SPACING EFFECT //
 	//execute effect//
-	for (n = 0; n < letterEffectTargets.length; n++) {
+	for (var n = 0; n < letterEffectTargets.length; n++) {
 
 
 
@@ -105,17 +105,17 @@ $(window).scroll(function () {
 
 	// MANAGES LOGO CHANGE //
 
-	if ((logoOffset >= videosOffset && logoOffset <= photosOffset) || logoOffset >= contactOffset) {
+	if ((logoOffset >= videosOffset && logoOffset <= photosOffset) /*|| logoOffset >= contactOffset*/) {
 
 		$('#logosmall').attr("src", 'img/logoduelwhite.svg');
-	} else if (logoOffset >= photosOffset && logoOffset <= contactOffset) {
+	} else if (logoOffset >= photosOffset /*&& logoOffset <= contactOffset*/) {
 		$('#logosmall').attr("src", 'img/logoduelblack.svg');
 
 	} else if (logoOffset <= videosOffset) {
 
 		$('#logosmall').attr("src", 'img/logoduelblack.svg');
 
-	} else if (logoOffset <= contactOffset && logoOffset <= aboutOffset) {
+	} else if (/*logoOffset <= contactOffset && */logoOffset <= aboutOffset) {
 
 		$('#logosmall').attr("src", 'img/logoduelblack.svg');
 
@@ -125,16 +125,16 @@ $(window).scroll(function () {
 	var offsetLinks = [];
 
 
-	for (i = 0; i < menuLinks.length; i++) {
+	for (var i = 0; i < menuLinks.length; i++) {
 		offsetLinks.push($(menuLinks[i]).offset().top);
 
 
-		if ((offsetLinks[i] >= videosOffset && offsetLinks[i] <= photosOffset) || offsetLinks[i] >= contactOffset) {
+		if ((offsetLinks[i] >= videosOffset && offsetLinks[i] <= photosOffset) /*|| offsetLinks[i] >= contactOffset*/) {
 
 			$(menuLinks[i]).css('color', 'white');
 
 
-		} else if (offsetLinks[i] >= photosOffset && offsetLinks[i] <= contactOffset) {
+		} else if (offsetLinks[i] >= photosOffset /*&& offsetLinks[i] <= contactOffset*/) {
 
 
 			$(menuLinks[i]).css('color', '#231f20');
@@ -143,7 +143,7 @@ $(window).scroll(function () {
 
 			$(menuLinks[i]).css('color', '#231f20');
 
-		} else if (offsetLinks[i] <= contactOffset && offsetLinks[i] <= aboutOffset) {
+		} else if (/*offsetLinks[i] <= contactOffset &&*/ offsetLinks[i] <= aboutOffset) {
 
 			$(menuLinks[i]).css('color', '231f20');
 
