@@ -1,15 +1,5 @@
 /**** BACKGROUNDSLIDER ***/
-.backgroundslider img{
-display:block!important;
-position:absolute!important;
-}
 
-.backgroundslider{
-min-height: 100vh;
-overflow: hidden;
-position:relative;
-	
-}
 
 .currentslide {
 	
@@ -18,4 +8,20 @@ position:relative;
 
 .queudedslides{
 	
+}
+
+
+.backgroundslider { 
+	min-height: 100vh;
+	overflow: hidden;
+    position: relative; 
+   
+}
+
+.backgroundslider > div { 
+    position: absolute; 
+    top: 10px; 
+    left: 10px; 
+    right: 10px; 
+    bottom: 10px; 
 }

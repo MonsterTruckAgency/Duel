@@ -1,4 +1,4 @@
-var loopPictures;
+/*var loopPictures;
 var slideIndex;
 var slides;
 var currentSlide;
@@ -88,11 +88,21 @@ function loop() {
 	});
 
 }
+*/	
 
 
 $(window).load(function () {
+$(".backgroundslider > div:gt(0)").hide();
 
-	setSlider();
-	startLoop();
+setInterval(function() { 
+  $('.backgroundslider > div:first')
+    .fadeOut(1000)
+    .next()
+    .fadeIn(1000)
+    .end()
+    .appendTo('.backgroundslider');
+},  3000);
+	//setSlider();//
+	//startLoop();//
 
 });
