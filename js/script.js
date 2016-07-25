@@ -182,3 +182,11 @@ $(function () {
 	});
 	toggles.first().click();
 });
+
+
+
+//********************************lyrics****///
+$('#lyrics a').bind('click', function () {
+	$('.visible').removeClass('visible');
+    $($(this).attr('href')).addClass('visible');
+});

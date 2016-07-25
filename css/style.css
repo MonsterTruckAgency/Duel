@@ -323,9 +323,10 @@ padding-left: 10%;
 	padding-top: 1.5vw;
 	
 	
+	
 }
 
-#lyricstitle{
+.lyricstitle{
 	font-size: 1.5vw;
 	padding-top: .3vw;
 	padding-bottom: .7vw;
@@ -337,7 +338,32 @@ padding-left: 10%;
 	
 }
 
+.lyricscontainer{
+	display:none;
+	height: 70vh;
+	overflow-y: scroll;
+	
+}
 
+.lyricscontainer.visible {
+	display:inline-block;
+}
+
+.lyricscontainer::-webkit-scrollbar {
+   
+	-webkit-background-color: white;
+    width: 7px;
+}
+.lyricscontainer::-webkit-scrollbar-thumb {
+   
+    -webkit-background-color: black;
+    -webkit-box-shadow: 0 0 1px rgba(255,255,255,.5);
+	appearance:none;
+}
+.lyricscontainer::-webkit-scrollbar-thumb {
+   
+    appearance:none;
+}
   /***** VIDEOS *******/
  #videos{
  background-color: black;
