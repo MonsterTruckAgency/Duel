@@ -187,6 +187,8 @@ $(function () {
 
 //********************************lyrics****///
 $('#lyrics a').bind('click', function () {
+	$('.linkactive').removeClass('linkactive');
+	$(this).toggleClass('linkactive');
 	$('.visible').removeClass('visible');
     $($(this).attr('href')).addClass('visible');
 });

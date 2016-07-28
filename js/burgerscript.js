@@ -20,7 +20,7 @@ $(document).ready(function () {
 	$('.accordion').click(function () {
 		$('.content').toggleClass('movebottom');
 	});
-	/*
+	
 
 	var codeElements = document.getElementsByTagName("code");
 	console.log(codeElements);

@@ -307,16 +307,24 @@ padding-left: 10%;
 #lyrics a{
 	text-decoration: none!important;
 	font-size: 1.5vw;
-	color: #9a1f20!important;
+	color: #9a1f20;
 	padding: 1.3vh 0 1.3vh 0;
 	display: block;
 	
 	
 }
+
+
+#lyrics a:hover{
+
+	color:#367295;
+}
+
+
 #lyricsdisplay{
 	display:inline-block;
 	width: 30%;
-	background-color: white;
+	color:#367295;
 	font-size: 1.3vw;
 	margin-top: 5vh;
 	padding:3vw;
@@ -351,19 +359,18 @@ padding-left: 10%;
 
 .lyricscontainer::-webkit-scrollbar {
    
-	-webkit-background-color: white;
-    width: 7px;
+	
 }
 .lyricscontainer::-webkit-scrollbar-thumb {
    
-    -webkit-background-color: black;
-    -webkit-box-shadow: 0 0 1px rgba(255,255,255,.5);
-	appearance:none;
+
+
 }
-.lyricscontainer::-webkit-scrollbar-thumb {
-   
-    appearance:none;
+
+.linkactive{
+	color:#367295!important;
 }
+
   /***** VIDEOS *******/
  #videos{
  background-color: black;
