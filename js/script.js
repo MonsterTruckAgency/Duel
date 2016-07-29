@@ -192,3 +192,12 @@ $('#lyrics a').bind('click', function () {
 	$('.visible').removeClass('visible');
     $($(this).attr('href')).addClass('visible');
 });
+
+
+//PLAYER//
+
+$(document).ready(function(){
+  $('.slickplayer').slick({
+    
+  });
+});
