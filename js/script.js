@@ -6,8 +6,8 @@
 
 
 
-$('a[href^="#"]').on('click', function (event) {
-
+$('.navmobile a, .navfull a').on('click', function (event) {
+	
 	var target = $($(this).attr('href'));
 
 	if (target.length) {
@@ -159,7 +159,9 @@ $(window).scroll(function () {
 $(window).load(function () {
 	$('.flexslider').flexslider({
 		animation: "slide"
-		, start: function (slider) {
+		,
+		 direction: "vertical",
+		start: function (slider) {
 			$('body').removeClass('loading');
 		}
 	});
@@ -186,11 +188,22 @@ $(function () {
 
 
 //********************************lyrics****///
-$('#lyrics a').bind('click', function () {
+var lyricsLinks = $('#lyrics a');
+var lyricsTargets = $('.lyricscontainer');
+for ( var lindex = 0; lindex <= lyricsLinks.length - 1; lindex++){
+ 	console.log("a");
+	$(lyricsLinks[lindex]).attr( "data-lyrics", lindex);
+}
+
+$('#lyrics a').bind('click', function (event) {
+	event.preventDefault();
+	var linkOrigin = $(this);
+	var linkOrigindata = $(this).data("lyrics");
 	$('.linkactive').removeClass('linkactive');
 	$(this).toggleClass('linkactive');
 	$('.visible').removeClass('visible');
-    $($(this).attr('href')).addClass('visible');
+    $(lyricsTargets[linkOrigindata]).addClass('visible');
+	
 });
 
 

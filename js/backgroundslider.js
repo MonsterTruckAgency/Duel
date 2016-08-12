@@ -101,7 +101,7 @@ setInterval(function() {
     .fadeIn(1000)
     .end()
     .appendTo('.backgroundslider');
-},  3000);
+},  6000);
 	//setSlider();//
 	//startLoop();//
 
