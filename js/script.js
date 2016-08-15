@@ -157,10 +157,19 @@ $(window).scroll(function () {
 	SyntaxHighlighter.all();
 });*/
 $(window).load(function () {
-	$('.flexslider').flexslider({
+	$('#videos .wrap .flexslider').flexslider({
 		animation: "slide"
 		,
 		 direction: "vertical",
+		start: function (slider) {
+			$('body').removeClass('loading');
+		}
+	});
+	
+	$('#slider .flexslider').flexslider({
+		animation: "slide"
+		,
+		 direction: "horizontal",
 		start: function (slider) {
 			$('body').removeClass('loading');
 		}
