@@ -33,13 +33,15 @@ a {
 	text-decoration: none;
 }
 
-*img {
+img {
 	max-width: 100%;
 }
 
 .wrap {
 	padding-left: 14.5vw;
 	height: 100%;
+	overflow-y: hidden;
+	overflow-x: hidden;
 }
 
 section {
@@ -228,11 +230,14 @@ i.fa-twitter-square {
 	margin-right: 10%;
 	padding-top: 5%;
 	float: left;
+	
+	
 }
 
 .gun img {
 	width: 100%;
 	padding-right: 5%;
+	
 }
 
 
@@ -335,10 +340,15 @@ i.fa-twitter-square {
 	height: 100vh;
 }
 
+#videos .wrap{
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+}
 .vidplayer {
 	width: 70%!important;
 	margin: 0 auto!important;
-	padding-top: 10%!important;
+	
 }
 
 .vidplayer .flex-control-nav {}
@@ -353,8 +363,8 @@ i.fa-twitter-square {
 	-ms-transform: rotate(90deg);
 	transform: rotate(90deg);
 	left: -20%;
-	width: 20%;
-	top: 50%;
+	width: 17%;
+	
 }
 
 
@@ -362,15 +372,29 @@ i.fa-twitter-square {
 
 .vidplayer .flex-direction-nav a {
 	text-decoration: none;
-	display: inline;
+	display: inline-block;
 	z-index: 10;
 	overflow: hidden;
 	opacity: 1;
 	cursor: pointer;
 	color: white;
-	font-size: 2em;
+	
+}
+.vidplayer .flex-direction-nav a::before {
+	font-size: 1.4vw;
+	
 }
 
+.lazyYT-container{
+	margin: 0 auto;
+}
+
+.html5-title{
+	text-decoration: none;
+    font-family: mohave;
+}
+
+/*
 video {
 	width: 100%;
 }
@@ -383,8 +407,10 @@ video {
 	margin-left: auto;
 	text-align: center;
 	text-align: center;
+}*/
+.lazyYT-container .html5-title-text-wrapper{
+	display:none;
 }
-
 .titlewrap {
 	width: 60%;
 	margin-left: 20%;
@@ -398,6 +424,7 @@ video {
 	text-align: center;
 	padding-bottom: 0%;
 	padding-top: 5%;
+	letter-spacing: .2rem;
 }
 
 .videotitle.letterEffect {
@@ -421,12 +448,13 @@ video {
 
 .itunes {
 	text-align: center;
-	font-size: .9rem;
+	font-size: .7rem;
 	padding-top: 3%;
-	letter-spacing: .5rem;
+
 	padding-bottom: 10%;
 	text-decoration: none;
 	color: white;
+	letter-spacing: .2rem;
 }
 
 .itunes a {
@@ -449,15 +477,19 @@ video {
 /***** PHOTOS *******/
 
 #photos {
-	height: 110vh;
+	height: 100vh;
 }
 
-#photos .wrap {}
+#photos .wrap {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+}
 
 #slider {
 	width: 100%;
 	padding-left: 13%;
-	padding-top: 1%;
+	
 }
 
 #slider img {}
@@ -479,7 +511,7 @@ video {
 }
 
 .flex-caption {
-	width: 87.5%;
+	
 	padding: 2%;
 	left: 0;
 	bottom: 0;
@@ -531,18 +563,21 @@ video {
 	height: 100vh;
 }
 
+#about .wrap{
+	padding-right: 14.5vw;
+}
+
 #biopicture {
 	opacity: .75;
-	max-width: 100%;
+	width: 100%;
 }
 
 #bio {
 	width: 100%;
 	margin: 0 auto;
-	margin-top: 20%;
 	font-size: .9rem;
 	line-height: 1.3;
-	overflow-y: scroll;
+	
 }
 
 
@@ -775,4 +810,137 @@ video {
 #footer p {
 	padding: 1vw;
 	font-size: .9rem;
+}
+
+
+/* REPONSIVE*/
+
+@media (max-width: 800px){
+	.wrap{
+		padding-left: 0;
+		padding-top: 5%;
+		
+	}
+	#music2 .wrap {
+		display:flex;
+		flex-direction: column;
+		height: 100vh;
+	
+	}
+	#music2 img{
+		padding: 0;
+		margin: 0;
+		max-width: 100%;
+		
+	}
+	.sectionacheter{
+		max-width: 80%;
+		margin-top: 0%!important;
+		margin-top: 3%!important;
+		order: 2;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		height:10%
+	
+		
+	}
+		.sectionacheter article{
+		width: 70%;
+		padding-left: 0;
+		margin:10% auto;
+		margin-top: 10%;
+		
+	}
+	
+	.sectionacheter article div{
+		width: 100%;
+		display:block;
+		
+		
+		
+	}
+	.achetermusic2 img{
+		width: 45%;
+		display:block;
+		margin:0 auto!important;
+		
+		
+		
+	}
+	.gun{
+		max-width: 90%;
+		float:none;
+		order:1;
+		
+		
+	}
+	.gun img{
+		max-width: 90%;
+		margin: 0 auto;
+		
+		display: block;
+		
+	}
+	.sectionacheter , .gun{
+	
+		width: 100%;
+		margin:0 auto;
+		
+		
+	}
+	
+	/* LYRICS*/
+	#musicbackground{
+		background: none;
+	}
+	#titlegunnn img {
+		width: 90%;
+		
+	}
+	.lyricscontainer p {
+    padding-bottom: 2vw;
+}
+	
+	/*videos*/
+	.vidplayer .flex-direction-nav a::before {
+    font-size: 1.5rem;
+}
+	
+	.vidplayer .flex-direction-nav {
+    -webkit-transform: rotate(90deg);
+    -moz-transform: rotate(90deg);
+    -o-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    transform: rotate(90deg);
+    left: -37%;
+    width: 50%;
+}
+	.videotitle.letterEffect {
+    letter-spacing: .2rem!important;
+}
+	.titlewrap{
+		width:100%;
+		margin: 0;
+		text-align: center;
+		letter-spacing: .2rem!important;
+	}
+	.videotitle{
+		width: 100%;
+		padding:0;
+		margin:0;
+	}
+	.itunes{
+		padding:0;
+		
+		letter-spacing: .2rem;
+		font-size: .7rem;
+	}
+	
+	.lazyYT-container{
+		width: 100%!important;
+		padding-bottom: 200px!important;
+		
+	}
+	
 }

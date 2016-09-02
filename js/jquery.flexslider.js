@@ -103,7 +103,9 @@
             if (!slider.animating && (keycode === 39 || keycode === 37)) {
               var target = (keycode === 39) ? slider.getTarget('next') :
                            (keycode === 37) ? slider.getTarget('prev') : false;
-              slider.flexAnimate(target, slider.vars.pauseOnAction);
+
+
+                slider.flexAnimate(target, slider.vars.pauseOnAction);
             }
           });
         }
@@ -323,6 +325,16 @@
 
             if (watchedEvent === "" || watchedEvent === event.type) {
               target = ($(this).hasClass(namespace + 'next')) ? slider.getTarget('next') : slider.getTarget('prev');
+              function stopVid(){
+              	var player = document.getElementsByClassName('vids');
+              
+              		for (var vindex=0;vindex <= player.length-1;vindex++ ){
+              	 //$('#popup-youtube-player').stopVideo();
+              	 $(player)[vindex].contentWindow.postMessage('{"event":"command","func":"' + 'stopVideo' + '","args":""}', '*');
+              	};
+
+              };
+              stopVid();
               slider.flexAnimate(target, slider.vars.pauseOnAction);
             }
 

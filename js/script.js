@@ -1,14 +1,26 @@
-//********************* disables section "about" scroll**********************************************************************"
 
+//*VIDEO PLAYER*//
+$('.js-lazyYT').lazyYT();
+
+
+//STOP VIDEOS WHEN CLICK ON ARROWS//
+function stopVid(){
+	var player = document.getElementsByClassName('vids');
+	alert();
+		for (var vindex=0;vindex <= player.length-1;vindex++ ){
+	 //$('#popup-youtube-player').stopVideo();
+	 $(player)[vindex].contentWindow.postMessage('{"event":"command","func":"' + 'stopVideo' + '","args":""}', '*');
+	};
+
+}
 
 
 //***************************************************************** scroll to sections //************************************/
 
-
-
 $('.navmobile a, .navfull a').on('click', function (event) {
-	
+
 	var target = $($(this).attr('href'));
+
 
 	if (target.length) {
 		event.preventDefault();
@@ -84,15 +96,15 @@ $(window).scroll(function () {
 	// ADDS MENU FILTER  //
 
 	/*
-    
+
     if (menuOffset <= musicOffset){
-        $('#menu').css('background', 'rgba(255,255,255, 0.0)'); 
-        
+        $('#menu').css('background', 'rgba(255,255,255, 0.0)');
+
     }
-    
+
     else if (menuOffset >= musicOffset){
-        $('#menu').css('background', 'rgba(255,255,255, 0.1)'); 
-        
+        $('#menu').css('background', 'rgba(255,255,255, 0.1)');
+
     }
    */
 
@@ -165,7 +177,7 @@ $(window).load(function () {
 			$('body').removeClass('loading');
 		}
 	});
-	
+
 	$('#slider .flexslider').flexslider({
 		animation: "slide"
 		,
@@ -212,14 +224,8 @@ $('#lyrics a').bind('click', function (event) {
 	$(this).toggleClass('linkactive');
 	$('.visible').removeClass('visible');
     $(lyricsTargets[linkOrigindata]).addClass('visible');
-	
+
 });
 
 
-//PLAYER//
-
-$(document).ready(function(){
-  $('.slickplayer').slick({
-    
-  });
-});
+//PLAYER AND LAZYT//

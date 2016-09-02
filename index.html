@@ -7,18 +7,21 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title> Duel </title>
 	<link rel="stylesheet" href="css/reset.css" />
-	<link rel="stylesheet" href="css/load.css" />
+	<!--<link rel="stylesheet" href="css/load.css" />-->
 	<link rel="stylesheet" href="css/flexslider.css" type="text/css" media="screen" />
 	<link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/smoothness/jquery-ui.css">
 	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" rel="stylesheet">
 	<link rel="stylesheet" href="css/bsstyle.css" />
 	<link rel="stylesheet" href="css/burgermenu.css" />
+	<link rel="stylesheet" href="css/lazyYT.css" />
 	<link rel="stylesheet" href="css/jquery.mCustomScrollbar.css" />
 	<link rel="stylesheet" href="css/style.css" />
-	<script type="text/javascript" src="js/load.js"></script>
+	<!--<script type="text/javascript" src="js/load.js"></script>-->
 	<script type="text/javascript" src="http://code.jquery.com/jquery-1.9.1.js"></script>
-	<script defer src="js/jquery.flexslider.js"></script>
 	<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
+	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+	<script defer src="js/jquery.flexslider.js"></script>
+	<script type="text/javascript" src="js/lazyYT.js"></script>
 	<script type="text/javascript" src="js/burgerscript.js"></script>
 	<script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
 </head>
@@ -27,9 +30,7 @@
 	<div id="load"></div>
 	<div id="contents">
 		<div id="menu" class="navfull">
-			<a id="backhome" href="#home">
-				<img id="logosmall" class="logoblack" src="img/logoduelblack.svg" alt="duellogo">
-			</a>
+			<a id="backhome" href="#home"> <img id="logosmall" class="logoblack" src="img/logoduelblack.svg" alt="duellogo"> </a>
 			<ul id="categories">
 				<li><a href="#music2"> Musique </a></li>
 				<li><a href="#music"> Textes </a></li>
@@ -39,18 +40,12 @@
 				<li><a href="#tour">Live </a></li>
 				<!--<li><a href="#contact"> Contact</a></li>-->
 			</ul>
-			<div class="communityicons">
-				<a target="_blank" href="https://www.facebook.com/groupeduel"><span><i class="fa fa-facebook-official"></i></span></a>
-				<a href="https://twitter.com/duel_music" target="blank"><span><i class="fa fa-twitter"></i></span></a>
-				<a href="http://youtu.be/_lFTpbSQ7aM?list=PLfkgNFtqEpzTOjccq1pn7HV2VSEYg1L9c" target="blank"><span><i class="fa fa-youtube-play"></i></span></a>
-			</div>
+			<div class="communityicons"> <a target="_blank" href="https://www.facebook.com/groupeduel"><span><i class="fa fa-facebook-official"></i></span></a> <a href="https://twitter.com/duel_music" target="blank"><span><i class="fa fa-twitter"></i></span></a> <a href="http://youtu.be/_lFTpbSQ7aM?list=PLfkgNFtqEpzTOjccq1pn7HV2VSEYg1L9c" target="blank"><span><i class="fa fa-youtube-play"></i></span></a> </div>
 		</div>
-		<div class="navmobile">
-			<b class="button" id="button"><span class="barra"></span> <span class=
+		<div class="navmobile"> <b class="button" id="button"><span class="barra"></span> <span class=
 			"barra"></span> <span class="barra"></span></b>
 			<ul class="nav menu">
-				<li>
-					<a href="#music2" class="accordion"> Musique </a>
+				<li> <a href="#music2" class="accordion"> Musique </a>
 					<ul class="accordiontarget">
 						<li><a href="#">subtitle1</a></li>
 						<li><a href="#">subtitle2</a></li>
@@ -64,21 +59,15 @@
 				<li><a href="#about">Bio </a></li>
 				<li><a href="#tour">Live </a></li>
 				<!--<li><a href="#contact"> Contact</a></li>-->
-			</ul>
-			<code>clicking on "b" toggles class "open" on "b" clicking on "a"
-			close</code>
-		</div>
+			</ul> <code>clicking on "b" toggles class "open" on "b" clicking on "a"
+			close</code> </div>
 		<div class="content">
 			<section id="home">
 				<div class="backgroundslider">
-					<div>
-						<img src="img/duelhome1.jpg" alt="duelpicture1">
-					</div>
-					<div><img src="img/duelhome2.jpg" alt="duelpicture2">
-					</div>
+					<div> <img src="img/duelhome1.jpg" alt="duelpicture1"> </div>
+					<div><img src="img/duelhome2.jpg" alt="duelpicture2"> </div>
 					<!--<div><img src="img/slider/sliderpic4.jpg" alt="duelpicture2">
-					</div>-->
-				</div>
+					</div>--></div>
 				<script src="js/backgroundslider.js"></script>
 			</section>
 			<section id="music2">
@@ -112,9 +101,7 @@
 			<section id="music">
 				<div class="wrap">
 					<div id="musicbackground">
-						<div id="titlegunnn">
-							<img src="img/titlegun.png" alt="imgduelgunnn">
-						</div>
+						<div id="titlegunnn"> <img src="img/titlegun.png" alt="imgduelgunnn"> </div>
 						<article id="lyrics">
 							<ul>
 								<li><a href="#" class="linkactive">Vertigo</a></li>
@@ -133,142 +120,109 @@
 							</ul>
 							<div id="lyricsdisplay">
 								<div class="lyricscontainer visible">
-									<div class="lyricstitle">
-									</div>
-									<p>
-										Seules à la nage au-dessus des ghettos
+									<div class="lyricstitle"> </div>
+									<p> Seules à la nage au-dessus des ghettos
 										<br> Des filles sages, pâles, cachées sous des manteaux
 										<br> Fixent les yeux verts comme des feux de Bengale
-										<br> Des amoureux perdus au creux des vagues
-									</p>
+										<br> Des amoureux perdus au creux des vagues </p>
 									<p>Sur un air de coup de spleen
 										<br> Tous les démons de la ville
 										<br> Sur un parking désert
-										<br> Hurlent à la lune ton nom
-									</p>
+										<br> Hurlent à la lune ton nom </p>
 									<p>Vertigo
 										<br> Dans les villes et la vitesse
-										<br> Dans les lignes droites, dans l’ivresse
-									</p>
+										<br> Dans les lignes droites, dans l’ivresse </p>
 									<p>Seules à la nage au pied des pyramides
 										<br> La nuit s’écrase sur leur visage docile
 										<br> On pleure, on deal mais y’a plus rien qui bouge
-										<br> 2-3 souvenirs lovés dans la grisaille
-									</p>
+										<br> 2-3 souvenirs lovés dans la grisaille </p>
 									<p>Sur un air de coup de spleen
 										<br> Tous les démons de la ville
 										<br> Sur un parking désert
-										<br> Hurlent à la lune ton nom
-									</p>
+										<br> Hurlent à la lune ton nom </p>
 									<p>Vertigo
 										<br> Dans les villes et la vitesse
 										<br> Dans les lignes droites, dans l’ivresse
-										<br>
-									</p>
+										<br> </p>
 								</div>
 								<div class="lyricscontainer">
-									<div class="lyricstitle">
-									</div>
+									<div class="lyricstitle"> </div>
 									<p> Combien de silhouettes résistent au désert
 										<br> A l’heure où on s’aime à se briser le dos
 										<br> Que les éclats de verre labyrinthent la scène
-										<br> Où tu m’as tant traîné hors de l’eau
-									</p>
+										<br> Où tu m’as tant traîné hors de l’eau </p>
 									<p>Les fusillades se taisent, à l’heure où la lumière s’endort
 										<br> Combien d’étés peuvent repousser l’hiver
-										<br> Et les canons qu’on braque sur le cœur
-									</p>
+										<br> Et les canons qu’on braque sur le cœur </p>
 									<p>Combien de silhouettes résistent aux frontières
 										<br> Aux heures où on ère à se briser le dos
 										<br> Un éclair puis la nuit et les gamins se relèvent
-										<br> Comme on se fait la peau pour de faux
-									</p>
+										<br> Comme on se fait la peau pour de faux </p>
 									<p>Les fusillades se lassent, à l’heure où la lumière s’endort
 										<br> Combien d’étés peuvent repousser les glaces
 										<br> Et les canons qu’on braque sur le cœur
-										<br>
-
-									</p>
+										<br> </p>
 								</div>
 								<div class="lyricscontainer">
-									<div class="lyricstitle">
-									</div>
+									<div class="lyricstitle"> </div>
 									<p> Week-ends aromatisés aux élyséennes
 										<br> On se traîne sous le soleil qui danse et qui se balance
-										<br> Les lundis nous envient, toi cambrée au ciel, caramel
-									</p>
+										<br> Les lundis nous envient, toi cambrée au ciel, caramel </p>
 									<p>Moi j'fais couler un bain, fais durer les ébats,
 										<br> Loin dans le temps, loin dans l'endroit,
-										<br> Toi et tes acrobaties sous les roulis de chocolat
-									</p>
+										<br> Toi et tes acrobaties sous les roulis de chocolat </p>
 									<p>Des pluies diluviennes sur mes coups d'soleil
 										<br> Je prends la fuite, tu m'fliques, j't'évite
-										<br> Le chaos, la félicité, le chaos, la félicité
-									</p>
+										<br> Le chaos, la félicité, le chaos, la félicité </p>
 									<p>Si t'as peur, blottis-toi contre moi
-										<br> J't'emmènerai ailleurs, j'te ferai du cinéma
-									</p>
+										<br> J't'emmènerai ailleurs, j'te ferai du cinéma </p>
 									<p>Déboulés dans les atolls,
 										<br> Tes bikinis qui se gondolent,
-										<br> Suis-je mort ou bien ressuscité ? Mort ou bien ressuscité ?
-									</p>
+										<br> Suis-je mort ou bien ressuscité ? Mort ou bien ressuscité ? </p>
 									<p>Le soir on s'étreint les deux pieds dans l'eau,
 										<br> Je perds la boule, j'enroule, déroule,
 										<br> Le chaos, la félicité, le chaos, la félicité
 										<br> Si t'as peur, blottis-toi contre moi
-										<br> J't'emmènerai ailleurs, j'te ferai du cinéma
-									</p>
+										<br> J't'emmènerai ailleurs, j'te ferai du cinéma </p>
 									<p>Alors on s'étreint les deux pieds dans l'eau,
 										<br> J'perds la boule, j'enroule, déroule,
 										<br> J'provoque à la martiniquaise tes p'tits miaulements de finlandaise
-										<br>
-
-									</p>
+										<br> </p>
 								</div>
 								<div class="lyricscontainer">
-									<div class="lyricstitle">
-									</div>
+									<div class="lyricstitle"> </div>
 									<p> Aux plus belles heures de la nuit, à bout de souffle elle échappe aux sirènes de police
 										<br> Au travers des ruelles de velour, travestie, elle danse, elle déambule, jusques au fond de longs et crasseux couloirs et, un genou à terre,
 										<br> Elle se cogne le reflet aux vitrines, le sourire aux lèvres elle clappe des mains
-										<br> A la gloire perdue de ses gamines, bercée d'effluves tropicales
-									</p>
+										<br> A la gloire perdue de ses gamines, bercée d'effluves tropicales </p>
 									<p>Et le ciel se dégage, et les vents les emportent
 										<br> Une lumière se penche, sur Amsterdam
 										<br> Ô le ciel se dégage, les amours se flinguent,
-										<br> Le soleil en plein visage, à Amsterdam
-									</p>
+										<br> Le soleil en plein visage, à Amsterdam </p>
 									<p>Aux plus belles heures de la nuit, à bout de souffle elle échappe aux rumeurs des dortoirs
 										<br> Elle balaie d'une main les allumeuses, et dérivant
 										<br> Elle se cogne le reflet aux vitrines, elle crie l'espoir de Dickinson
-										<br> Près de toi je me suis endormi, bercé d'effluves de jasmin
-									</p>
+										<br> Près de toi je me suis endormi, bercé d'effluves de jasmin </p>
 									<p>Et le ciel se dégage, et les vents les emportent
 										<br> Une lumière se penche, sur Amsterdam
 										<br> Ô le ciel se dégage, les amours se flinguent,
-										<br> Le soleil en plein visage, à Amsterdam
-									</p>
+										<br> Le soleil en plein visage, à Amsterdam </p>
 									<p>Aux plus belles heures de la nuit, à bout de souffle elle échappe aux sirènes de police.
 										<br> Au travers des ruelles de velour, travestie, elle danse, elle déambule, jusques au fond de longs et crasseux couloirs. Tutti Frutti, confettis, de grâce et de panache elle s'enivre, aux heures où on s'aime à en mourir, cachés sous les lits, un couteau dans l'oreiller, la peur au ventre au fond du dortoir. Son écorce s'effrite, un genou à terre elle balaie d'une main les rumeurs et les allumeuses, les allumeuses et les allumés qui les suivent, ces allumés qui, sur son ventre, récoltent ce qu'ils ont semé.
-										<br>
-
-									</p>
+										<br> </p>
 								</div>
 								<div class="lyricscontainer">
-									<div class="lyricstitle">
-									</div>
+									<div class="lyricstitle"> </div>
 									<p> Sortez les deux mains sur la tête, la nuit s’apprête à disparaître
 										<br> Une limousine fuit dehors, peurs et paresse à son bord
 										<br> Ton corps recroquevillé mime le triste sort
-										<br> Cette nuit le roi est mort
-									</p>
+										<br> Cette nuit le roi est mort </p>
 									<p>Combien d’hivers avaient brûlé ?
 										<br> Combien de manèges en fumée ?
 										<br> On poursuit le bruit de l’or
 										<br> Qui ricoche sur la ville endormie
 										<br> Tes mains toutes glacées
-										<br> Se brisent sur mon corps
-									</p>
+										<br> Se brisent sur mon corps </p>
 									<p>Où étais-tu cette nuit là ?
 										<br> Quand ils fusillaient les astres
 										<br> Que le ciel échangeait sa place
@@ -279,37 +233,31 @@
 										<br> Combien de rêves grésillaient, combien ne vieilliraient jamais…
 										<br> Modigliani sur ressorts repense le décor
 										<br> Les entends-tu t'encercler ?
-										<br> Mille trapèzes à l’effort
-									</p>
+										<br> Mille trapèzes à l’effort </p>
 									<p>Où étais-tu cette nuit là ?
 										<br> Quand ils fusillaient les astres
 										<br> Que le ciel échangeait sa place
 										<br> Pour mourir sur le trottoir
 										<br> Te protégeais-tu bien du froid ?
 										<br> Qui souffle lorsque s’efface la grâce des acrobates
-										<br> Qui souffle quand la nuit efface la grâce des acrobates
-									</p>
+										<br> Qui souffle quand la nuit efface la grâce des acrobates </p>
 									<p>Ils titubent, ils vacillent les acrobates
 										<br> Un genou à terre, dans le froid
 										<br> Titubent, vacillent sans grâce
 										<br> Depuis que tu es loin de moi
-										<br>
-									</p>
+										<br> </p>
 								</div>
 								<div class="lyricscontainer">
-									<div class="lyricstitle">
-									</div>
+									<div class="lyricstitle"> </div>
 									<p> Un shoot de lumière éclairera les pavés
 										<br> Les écailles du ciel m’emmèneront vers les blés
 										<br> Là où le temps fait se courber la ville
 										<br> Un peu plus loin de toi
 										<br> Des pétards, des sirènes, crépiteront sous une pluie dorée
 										<br> Caressant la peur au rythme des marées
-										<br> Au creux de la nuit, j’quitterai les bas-côtés
-									</p>
+										<br> Au creux de la nuit, j’quitterai les bas-côtés </p>
 									<p>Et tu ne me manqueras plus
-										<br> Hey, tu ne me manqueras plus
-									</p>
+										<br> Hey, tu ne me manqueras plus </p>
 									<p>Tes mains ô tes mains sur ma carabine
 										<br> Si tu tirais, tes balles se perdaient dans le vent
 										<br> J’oublierai tout au pied de la colline
@@ -317,235 +265,180 @@
 										<br> Des mille cigarettes sur les toits de brique à Roubaix
 										<br> À nos étreintes à l’arrière des taxis volés
 										<br> Au bout de la nuit tout finit par brûler
-										<br> Les feuilles mortes et les années
-									</p>
+										<br> Les feuilles mortes et les années </p>
 									<p>Et tu ne me manqueras plus
-										<br> Hey, tu ne me manqueras plus
-									</p>
+										<br> Hey, tu ne me manqueras plus </p>
 									<p>La ville semble se noyer
 										<br> Toi, à contre-courant
 										<br> La ville semble se noyer
 										<br> On dirait que le ciel a pris les couleurs des indiennes
-										<br> Criant que tu ne me manquerais plus
-									</p>
+										<br> Criant que tu ne me manquerais plus </p>
 									<p>Et tu ne me manqueras plus
 										<br> Hey, tu ne me manqueras plus
-										<br>
-									</p>
+										<br> </p>
 								</div>
 								<div class="lyricscontainer">
-									<div class="lyricstitle">
-									</div>
+									<div class="lyricstitle"> </div>
 									<p> Les souvenirs que l'on sait réciter peuvent s'oublier
 										<br> Peuvent s'oublier les ménesses qu'on a quittées avant le jour
 										<br> À Voronej on m'a déposé les mains ligotées
-										<br> Mal ligoté je m'dégageais, je dérangeais presque toujours
-									</p>
+										<br> Mal ligoté je m'dégageais, je dérangeais presque toujours </p>
 									<p>Si le monde est un jouet, pourras-tu m'apprendre ?
 										<br> Car moi quand j'essaie d'oublier je ressemble
 										<br> À celui qui, tous les soirs, se transforme et s'offre en bête de foire
-										<br> Même au glas de l'assommoir n'oublie pas encore
-									</p>
+										<br> Même au glas de l'assommoir n'oublie pas encore </p>
 									<p>Et mille lits, mille villes et mille ennuis, je les oublie
-										<br> Je les oublie plus vite encore qu'un ricochet sur tes croquis
-									</p>
+										<br> Je les oublie plus vite encore qu'un ricochet sur tes croquis </p>
 									<p>Si le monde est un jouet, pourras-tu m'apprendre ?
 										<br> Car moi quand j'essaie d'oublier je ressemble
 										<br> À celui qui, tous les soirs, se transforme et s'offre en bête de foire
 										<br> Même au glas de l'assommoir n'oublie pas encore
-										<br>
-									</p>
+										<br> </p>
 								</div>
-
 								<div class="lyricscontainer">
-									<div class="lyricstitle">
-									</div>
+									<div class="lyricstitle"> </div>
 									<p> Ils cavalaient loin d’ici entrelacés dans l’espace
 										<br> Perdus partout lorsque sur la terre
 										<br> Les parallèles lascives ils les remettaient à leur place
-										<br> Comme la ville respirait à l’envers
-									</p>
+										<br> Comme la ville respirait à l’envers </p>
 									<p>Des pluies électroniques, en transit, bousculaient l’histoire
 										<br> Noire et blanche, camouflée comme hier
 										<br> Menottes et brouillard, on traversait sans rien y voir
-										<br> L’heure avançait et se lisait sur les lèvres
-									</p>
+										<br> L’heure avançait et se lisait sur les lèvres </p>
 									<p>Venu le soir, la brume fait prisonnier, lâche
 										<br> Qui survole les toits
 										<br> Eux surfent la nuit orage
-										<br> Condamnés à mourir au combat
-									</p>
+										<br> Condamnés à mourir au combat </p>
 									<p>L’ambulance est maligne, elle rôde autour de moi
 										<br> Empruntant les traits de ton visage
 										<br> « Qu’attends-tu pour me suivre et te sortir de là ?
-										<br> Saurais-tu déjà mentir à ton âge ? »
-									</p>
+										<br> Saurais-tu déjà mentir à ton âge ? » </p>
 									<p>Venu le soir, la brume fait prisonnier, lâche
 										<br> Qui survole les toits
 										<br> Eux surfent la nuit orage
 										<br> Condamnés à mourir au combat
-										<br>
-
-									</p>
+										<br> </p>
 								</div>
 								<div class="lyricscontainer">
-									<div class="lyricstitle">
-									</div>
-									<p>
-										Dès que derrière les buildings s'endort le ciel
+									<div class="lyricstitle"> </div>
+									<p> Dès que derrière les buildings s'endort le ciel
 										<br> Voyez les hommes tomber les ceintures,
-										<br> Les femmes les caracos de soie
-									</p>
+										<br> Les femmes les caracos de soie </p>
 									<p>Plongés dans le bleu des verres,
 										<br> Les silhouettes s'affairent,
-										<br> A qui sont ces jambes qui s'unissent et dansent au-dessus des toits ?
-									</p>
+										<br> A qui sont ces jambes qui s'unissent et dansent au-dessus des toits ? </p>
 									<p>Qui sont ces zouaves qui twistent et puis qui s'échappent ?
 										<br> Aussi vite qu'on gratte une allumette
-										<br> Leur coeurs pressent le pas et pour fuir le froid
-									</p>
+										<br> Leur coeurs pressent le pas et pour fuir le froid </p>
 									<p>Ils se laissent traîner, traîner, traîner le soir dans les virages
 										<br> La nuit ils dévient, dévient jusqu'à la plage
-										<br> Ils se laissent traîner, traîner, traîner le soir dans les virages
-									</p>
+										<br> Ils se laissent traîner, traîner, traîner le soir dans les virages </p>
 									<p>Déguisés de cent façons,
 										<br> Leur course passagère orne l'horizon
-										<br> Comme un bijou dans la rivière
-									</p>
+										<br> Comme un bijou dans la rivière </p>
 									<p>Qui sont ces zouaves qui twistent et puis qui s'échappent ?
 										<br> Aussi vite qu'on gratte une allumette
-										<br> Leur coeurs pressent le pas et pour fuir le froid
-									</p>
+										<br> Leur coeurs pressent le pas et pour fuir le froid </p>
 									<p>Ils se laissent traîner, traîner, traîner le soir dans les virages
 										<br> La nuit ils dévient, dévient jusqu'à la plage
 										<br> Ils se laissent traîner, traîner, traîner le soir dans les virages
-										<br>
-
-									</p>
+										<br> </p>
 								</div>
 								<div class="lyricscontainer">
-									<div class="lyricstitle">
-									</div>
+									<div class="lyricstitle"> </div>
 									<p>J'ai vu l'été chavirer,
 										<br> J'ai vu des gens couler sous les courants
 										<br> Dans les rapides
 										<br> J'ai vu les tambours du Brésil se noyer dans le vide
 										<br> J'ai vu des gosses prier les yeux des reptiles
-										<br> Dans les rapides
-									</p>
+										<br> Dans les rapides </p>
 									<p>Quand la nuit se dressait devant nous
 										<br> Que les rives étaient toutes infidèles
 										<br> Je sais pourquoi j'étais à genoux
-										<br> Maintenant j'me rappelle
-									</p>
+										<br> Maintenant j'me rappelle </p>
 									<p>Tous les sunlights, tous les hivers
 										<br> Tout est illuminé quand tout s'accélère
-										<br> Et nous laisse au vent
-									</p>
+										<br> Et nous laisse au vent </p>
 									<p>J'ai vu la mer au loin devant
 										<br> J'ai vu l'estuaire se tordre sous les torrents
 										<br> Dans les rapides
 										<br> J'ai vu les cargos dans les îles, tes yeux dans le rétro
 										<br> J'ai vu des gueules fragiles gâcher les photos
-										<br> Dans les rapides
-									</p>
+										<br> Dans les rapides </p>
 									<p>Quand la nuit se dressait devant nous
 										<br> Que les rives étaient toutes infidèles
 										<br> Je sais pourquoi j'étais à genoux
-										<br> Maintenant j'me rappelle
-									</p>
+										<br> Maintenant j'me rappelle </p>
 									<p>Tous les sunlights, tous les hivers
 										<br> Tout est illuminé quand tout s'accélère
 										<br> Et nous laisse
 										<br> Tous les sunlights, les hôtels bleus
 										<br> Les nuits d'avril où les rapides nous perdent
 										<br> Et nous laissent au vent
-										<br>
-									</p>
+										<br> </p>
 								</div>
 								<div class="lyricscontainer">
-									<div class="lyricstitle">
-									</div>
+									<div class="lyricstitle"> </div>
 									<p>Ô ma belle héroïne, tu files sur la ville
 										<br> Tu rêves de strass et de crash sur la banquette d’une vieille Cadillac
-										<br> Et de Lilli Palmer
-									</p>
+										<br> Et de Lilli Palmer </p>
 									<p>La nuit sous les missiles, à l'aube un satellite
 										<br> Tu veux du rush mais tes poches sont vides, vite que vienne le soir
-										<br> Que le temps nous emporte
-									</p>
+										<br> Que le temps nous emporte </p>
 									<p>Empêtré dans la rue Morgue, j'regrette tes longs silences
-										<br> Et je m'balance des parisiennes, si loin
-									</p>
+										<br> Et je m'balance des parisiennes, si loin </p>
 									<p>Si loin du ciel d'Odessa, des fusées ivres en balade
 										<br> Si loin de ces nuits où les mères prient pour rien
-										<br> Si loin de moi
-									</p>
+										<br> Si loin de moi </p>
 									<p>Paris la magnifique, elle la vraie héroïne
 										<br> Tu rêves de shoot et de spoot, de brûler tes ailes de gosse
-										<br> Et de lueurs sous ta porte
-									</p>
+										<br> Et de lueurs sous ta porte </p>
 									<p>Tu piétines les vignes, en apnée dans la piscine
 										<br> Tu veux des guns et des clubs, des nuits claires ô des nuits sans escales
-										<br> Même une douce noyade
-									</p>
+										<br> Même une douce noyade </p>
 									<p>Empêtré dans la rue Morgue, j'regrette tes longs silences
-										<br> Et je m'balance des parisiennes, si loin
-									</p>
+										<br> Et je m'balance des parisiennes, si loin </p>
 									<p>Si loin du ciel d'Odessa, des fusées ivres en balade
 										<br> Si loin de ces nuits où les mères prient pour rien
 										<br> Si loin des trains pris au hasard, des filles qu'on rejoint à la nage
 										<br> Si loin de ces nuits où les mères prient pour rien
 										<br> Si loin de moi
-										<br>
-									</p>
+										<br> </p>
 								</div>
 								<div class="lyricscontainer">
-									<div class="lyricstitle">
-									</div>
+									<div class="lyricstitle"> </div>
 									<p>Quand j'entends cette mélodie le temps se tord
-										<br> Le temps d'un instant magnétique tout me ramène dans ton décors
-									</p>
+										<br> Le temps d'un instant magnétique tout me ramène dans ton décors </p>
 									<p>Quand j'entends ces mots hésitants mon coeur joue à voguer
-										<br> L'âme à contre courant, se réveiller un soir d'été dans un lit, dans un champ
-									</p>
+										<br> L'âme à contre courant, se réveiller un soir d'été dans un lit, dans un champ </p>
 									<p>Revoir, revivre la même chose, le son de ta voix qui chuchotait
 										<br> Love me, please love me, allongés sous le froid
-										<br> Love me, please love me, dans un souffle tu t'en vas
-									</p>
+										<br> Love me, please love me, dans un souffle tu t'en vas </p>
 									<p>Quand j'entends cette mélodie la rue s'éteint
-										<br> La rue se change en estrans fiers où tu t'étales comme un ruban sous la mer
-									</p>
+										<br> La rue se change en estrans fiers où tu t'étales comme un ruban sous la mer </p>
 									<p>Quand j'entends ces mots perçants mon coeur joue à voguer
-										<br> L'âme à contre courant, se réveiller un soir d'été dans un lit, dans un champ
-									</p>
+										<br> L'âme à contre courant, se réveiller un soir d'été dans un lit, dans un champ </p>
 									<p>Revoir, revivre la même chose, le son de ta voix qui chuchotait
 										<br> Love me, please love me, allongés sous le froid
 										<br> Love me, please love me, dans un souffle tu t'en vas
-										<br>
-
-									</p>
+										<br> </p>
 								</div>
 								<div class="lyricscontainer">
-									<div class="lyricstitle">
-									</div>
+									<div class="lyricstitle"> </div>
 									<p>Si le soleil prend la mer, que les alizés nous désertent
 										<br> Est-ce que tu resteras encore près de moi ?
 										<br> Qu’au coin d’une rue une mère nomade nous devine un atterrissage
 										<br> Laisseras-tu sur moi tes lèvres de sel ?
-										<br> Est-ce que tu m’aimeras encore ?
-									</p>
+										<br> Est-ce que tu m’aimeras encore ? </p>
 									<p>Si nos souvenirs de vieux hôtels et de cerisiers sur la plaine
 										<br> S’ils se noyaient dans les draps sous nos yeux
 										<br> Que nos caresses militaires se réfugiaient près du feu
 										<br> Est-ce que tu sécherais mes larmes de gamin ?
-										<br> Est-ce que tu m’aimerais encore ?
-									</p>
+										<br> Est-ce que tu m’aimerais encore ? </p>
 									<p>Est-ce que tu m’aimerais encore
 										<br> Si une nuit des plus calmes nous surprenait en route ?
 										<br> Me ferais-tu un abri ?
-										<br> Ville Lumière
-									</p>
+										<br> Ville Lumière </p>
 									<p>Si douze alarmes retentissaient et que l’une d’elles nous démasquait
 										<br> Poserais-tu encore sur moi tes doigts étincelles ?
 										<br> Si douze alarmes retentissaient, que plus personne ne tendait l’oreille
@@ -553,27 +446,18 @@
 										<br> Est-ce que tu m’aimerais encore ?
 										<br> Est-ce que tu m’aimerais encore ?
 										<br> Si une nuit des plus douces nous renversait en route
-										<br> Me prendrais-tu dans tes bras ?
-									</p>
+										<br> Me prendrais-tu dans tes bras ? </p>
 									<p>Dans tes mains où les lanternes fantômes se réfugient le soir
 										<br> Pour éclairer quelques mômes qui s’embrassent
-										<br> Ville Lumière
-
-									</p>
+										<br> Ville Lumière </p>
 								</div>
 								<div class="lyricscontainer">
-									<div class="lyricstitle">
-									</div>
-									<p>Si le soleil prend la mer, que les alizés nous désertent Est-ce que tu resteras encore près de moi ? Qu’au coin d’une rue une mère nomade nous devine un atterrissage Laisseras-tu sur moi tes lèvres de sel ? Est-ce que tu m’aimeras encore ?
-									</p>
-									<p>Si nos souvenirs de vieux hôtels et de cerisiers sur la plaine S’ils se noyaient dans les draps sous nos yeux Que nos caresses militaires se réfugiaient près du feu Est-ce que tu sécherais mes larmes de gamin ? Est-ce que tu m’aimerais encore ?
-									</p>
-									<p>Est-ce que tu m’aimerais encore Si une nuit des plus calmes nous surprenait en route ? Me ferais-tu un abri ? Ville Lumière
-									</p>
-									<p>Si douze alarmes retentissaient et que l’une d’elles nous démasquait Poserais-tu encore sur moi tes doigts étincelles ? Si douze alarmes retentissaient, que plus personne ne tendait l’oreille Voudrais-tu encore de moi sur ton corps ? Est-ce que tu m’aimerais encore ? Est-ce que tu m’aimerais encore ? Si une nuit des plus douces nous renversait en route Me prendrais-tu dans tes bras ?
-									</p>
-									<p>Dans tes mains où les lanternes fantômes se réfugient le soir Pour éclairer quelques mômes qui s’embrassent Ville Lumière
-									</p>
+									<div class="lyricstitle"> </div>
+									<p>Si le soleil prend la mer, que les alizés nous désertent Est-ce que tu resteras encore près de moi ? Qu’au coin d’une rue une mère nomade nous devine un atterrissage Laisseras-tu sur moi tes lèvres de sel ? Est-ce que tu m’aimeras encore ? </p>
+									<p>Si nos souvenirs de vieux hôtels et de cerisiers sur la plaine S’ils se noyaient dans les draps sous nos yeux Que nos caresses militaires se réfugiaient près du feu Est-ce que tu sécherais mes larmes de gamin ? Est-ce que tu m’aimerais encore ? </p>
+									<p>Est-ce que tu m’aimerais encore Si une nuit des plus calmes nous surprenait en route ? Me ferais-tu un abri ? Ville Lumière </p>
+									<p>Si douze alarmes retentissaient et que l’une d’elles nous démasquait Poserais-tu encore sur moi tes doigts étincelles ? Si douze alarmes retentissaient, que plus personne ne tendait l’oreille Voudrais-tu encore de moi sur ton corps ? Est-ce que tu m’aimerais encore ? Est-ce que tu m’aimerais encore ? Si une nuit des plus douces nous renversait en route Me prendrais-tu dans tes bras ? </p>
+									<p>Dans tes mains où les lanternes fantômes se réfugient le soir Pour éclairer quelques mômes qui s’embrassent Ville Lumière </p>
 								</div>
 							</div>
 						</article>
@@ -585,65 +469,51 @@
 					<div class="flexslider vidplayer">
 						<ul class="slides">
 							<li>
-								<iframe class="videos" src="https://www.youtube.com/embed/yxvrcMa9N0I?showinfo=0" frameborder="0" allowfullscreen></iframe>
+								<div class="js-lazyYT" data-youtube-id="yxvrcMa9N0I" data-width="500" data-height="333" data-parameters="showinfo=0"></div>
+								<!--<iframe class="videos" src="https://www.youtube.com/embed/yxvrcMa9N0I?showinfo=0" frameborder="0" allowfullscreen></iframe>-->
 								<div class="titlewrap">
-									<div class="videotitle letterEffect"> Vertigo
-										<p class="itunes"><a href="https://itunes.apple.com/fr/album/gunnn-express/id966370899" target="_blank">itunes</a></p>
-									</div>
+									<div class="videotitle"> Vertigo </div>
+									<p class="itunes"><a href="https://itunes.apple.com/fr/album/gunnn-express/id966370899" target="_blank">itunes</a></p>
 								</div>
 							</li>
-							<li>
-								<iframe class="videos" src="https://www.youtube.com/embed/0RE7Apq3M84?showinfo=0" showinfo="0" disablekb="1" autohide="1" frameborder="0" allowfullscreen></iframe>
+							<li><div class="js-lazyYT" data-youtube-id="0RE7Apq3M84" data-width="500" data-height="333" data-parameters="showinfo=0"></div>
 								<div class="titlewrap">
-									<div class="videotitle letterEffect"> Austerlitz
-										<p class="itunes"><a href="https://itunes.apple.com/fr/album/gunnn-express/id966370899" target="_blank">itunes</a></p>
-									</div>
+									<div class="videotitle"> Austerlitz</div>
+									<p class="itunes"><a href="https://itunes.apple.com/fr/album/gunnn-express/id966370899" target="_blank">itunes</a></p>
 								</div>
 							</li>
-							<li>
-								<iframe class="videos" src="https://www.youtube.com/embed/gume0Am9rxE?showinfo=0" frameborder="0" allowfullscreen></iframe>
+							<li><div class="js-lazyYT" data-youtube-id="gume0Am9rxE" data-width="500" data-height="333" data-parameters="showinfo=0"></div>
 								<div class="titlewrap">
-									<div class="videotitle letterEffect"> Caramel
-										<p class="itunes"><a href="https://itunes.apple.com/fr/album/gunnn-express/id966370899" target="_blank">itunes</a></p>
-									</div>
+									<div class="videotitle"> Caramel</div>
+									<p class="itunes"><a href="https://itunes.apple.com/fr/album/gunnn-express/id966370899" target="_blank">itunes</a></p>
 								</div>
 							</li>
-							<li>
-								<iframe class="videos" src="https://www.youtube.com/embed/GnTXOmI2R50?&fs=0&showinfo=0&disablekb=1&hd=1&autohide=1" frameborder="0" allowfullscreen></iframe>
+							<li><div class="js-lazyYT" data-youtube-id="GnTXOmI2R50" data-width="500" data-height="333" data-parameters="showinfo=0"></div>
 								<div class="titlewrap">
-									<div class="videotitle letterEffect"> Amsterdam
-										<p class="itunes"><a href="https://itunes.apple.com/fr/album/gunnn-express/id966370899" target="_blank">itunes</a></p>
-									</div>
+									<div class="videotitle"> Amsterdam </div>
+									<p class="itunes"><a href="https://itunes.apple.com/fr/album/gunnn-express/id966370899" target="_blank">itunes</a></p>
 								</div>
 							</li>
-							<li>
-								<iframe class="videos" src="https://www.youtube.com/embed/_lFTpbSQ7aM?&fs=0&showinfo=0&disablekb=1&hd=1&autohide=1" frameborder="0" allowfullscreen></iframe>
+							<li><div class="js-lazyYT" data-youtube-id="_lFTpbSQ7aM" data-width="500" data-height="333" data-parameters="showinfo=0"></div>
 								<div class="titlewrap">
-									<div class="videotitle letterEffect "> Hey, tu ne me manqueras plus
-										<p class="itunes"><a href="https://itunes.apple.com/fr/album/gunnn-express/id966370899" target="_blank">itunes</a></p>
-									</div>
+									<div class="videotitle"> Hey, tu ne me manqueras plus</div>
+									<p class="itunes"><a href="https://itunes.apple.com/fr/album/gunnn-express/id966370899" target="_blank">itunes</a></p>
 								</div>
 							</li>
-							<li>
-								<iframe class="videos" src="https://www.youtube.com/embed/83B2G0DARvI?&fs=0&showinfo=0&disablekb=1&hd=1&autohide=1" frameborder="0" allowfullscreen></iframe>
+							<li><div class="js-lazyYT" data-youtube-id="83B2G0DARvI" data-width="500" data-height="333" data-parameters="showinfo=0"></div>
 								<div class="titlewrap">
-									<div class="videotitle letterEffect"> A Voronej
-										<p class="itunes"><a href="https://itunes.apple.com/fr/album/gunnn-express/id966370899" target="_blank">itunes</a></p>
-									</div>
+									<div class="videotitle"> A Voronej</div>
+									<p class="itunes"><a href="https://itunes.apple.com/fr/album/gunnn-express/id966370899" target="_blank">itunes</a></p>
 								</div>
 							</li>
-							<li>
-								<iframe class="videos" src="https://www.youtube.com/embed/wzRLPxF6y9w?&fs=0&showinfo=0&disablekb=1&hd=1&autohide=1" frameborder="0" allowfullscreen></iframe>
+							<li><div class="js-lazyYT" data-youtube-id="wzRLPxF6y9w" data-width="500" data-height="333" data-parameters="showinfo=0"></div>
 								<div class="titlewrap">
-									<div class="videotitle  letterEffect"> Ville lumière
-										<p class="itunes"><a href="https://itunes.apple.com/fr/album/gunnn-express/id966370899" target="_blank">itunes</a></p>
-									</div>
+									<div class="videotitle"> Ville lumière </div>
+									<p class="itunes"><a href="https://itunes.apple.com/fr/album/gunnn-express/id966370899" target="_blank">itunes</a></p>
 								</div>
 							</li>
 						</ul>
 					</div>
-
-
 					<!--
 					<div class="slickplayer">
 	<div>
@@ -763,44 +633,35 @@
 								</div>
 							</div>
 						</article>
-					</div>-->
-				</div>
+					</div>--></div>
 			</section>
 			<section>
-				<div id="whitespace">
-				</div>
+				<div id="whitespace"> </div>
 			</section>
 			<section id="photos">
 				<div class="wrap">
 					<div id="slider">
 						<div class="flexslider">
 							<ul class="slides">
-								<li>
-									<img src="img/slider/sliderpic1.jpg" alt="sliderpic1" />
+								<li> <img src="img/slider/sliderpic1.jpg" alt="sliderpic1" />
 									<p class="flex-caption"> Adventurer Cheesecake Brownie azeaze aezeaze zaeaeee zaeaazaezea aazeeaaeeazzae azazez ezaeaze</p>
 								</li>
-								<li>
-									<img src="img/slider/sliderpic2.jpg" alt="sliderpic2" />
+								<li> <img src="img/slider/sliderpic2.jpg" alt="sliderpic2" />
 									<p class="flex-caption"> Adventurer Cheesecake Brownie azeaze aezeaze zaeaeee zaeaazaezea aazeeaaeeazzae azazez ezaeaze</p>
 								</li>
-								<li>
-									<img src="img/slider/sliderpic3.jpg" alt="sliderpic3" />
+								<li> <img src="img/slider/sliderpic3.jpg" alt="sliderpic3" />
 									<p class="flex-caption"> Adventurer Cheesecake Brownie azeaze aezeaze zaeaeee zaeaazaezea aazeeaaeeazzae azazez ezaeaze</p>
 								</li>
-								<li>
-									<img src="img/slider/sliderpic4.jpg" alt="sliderpic4" />
+								<li> <img src="img/slider/sliderpic4.jpg" alt="sliderpic4" />
 									<p class="flex-caption"> Adventurer Cheesecake Brownie azeaze aezeaze zaeaeee zaeaazaezea aazeeaaeeazzae azazez ezaeaze</p>
 								</li>
-								<li>
-									<img src="img/slider/sliderpic5.jpg" alt="sliderpic5" />
+								<li> <img src="img/slider/sliderpic5.jpg" alt="sliderpic5" />
 									<p class="flex-caption"> Adventurer Cheesecake Brownie azeaze aezeaze zaeaeee zaeaazaezea aazeeaaeeazzae azazez ezaeaze</p>
 								</li>
-								<li>
-									<img src="img/slider/sliderpic6.jpg" alt="sliderpic6" />
+								<li> <img src="img/slider/sliderpic6.jpg" alt="sliderpic6" />
 									<p class="flex-caption"> Adventurer Cheesecake Brownie azeaze aezeaze zaeaeee zaeaazaezea aazeeaaeeazzae azazez ezaeaze</p>
 								</li>
-								<li>
-									<img src="img/slider/sliderpic7.jpg" alt="sliderpic7" />
+								<li> <img src="img/slider/sliderpic7.jpg" alt="sliderpic7" />
 									<p class="flex-caption"> Adventurer Cheesecake Brownie azeaze aezeaze zaeaeee zaeaazaezea aazeeaaeeazzae azazez ezaeaze</p>
 								</li>
 							</ul>
@@ -810,31 +671,23 @@
 			</section>
 			<section id="about">
 				<div class="wrap">
-					
-						<article id="bio">
-							<img id="biopicture" src="/img/headerabout.jpg" alt="duelbio">
-							<p> DUEL c’est l’histoire en marche de deux frères qui le sont devenus, l’alchimie Pop entre Julien Boulfray et Brieuc Carnaille, deux auteurs compositeurs qui se complètent, deux voix qui se répondent.
-								<br>
-								<br> Après avoir partagé la scène partout en France (Printemps de Bourges, Bars en Trans…), à Paris (La Cigale, La Boule Noire…), en Europe (Bruxelles, Amsterdam, Londres) ou à New-York avec des artistes tels que Feu! Chatterton, Talisco, Christophe, Camélia Jordana ou encore Pete Doherty, DUEL sort son premier album "GUNNN EXPRESS" le 23 février 2015. Les singles « Caramel » et « Hey, tu ne me manqueras plus » sont notamment diffusés sur Virgin Radio, RTL 2 ou Ouï Fm.
-								<br>
-								<br> Le duo enregistre dans la foulée les maquettes de son successeur attendu pour 2017.
-								<br>
-								<br> « Ils rappellent les travaux de Gaëtan Roussel par cette façon de croiser les influences et de jouer la pop sans complexe dans la langue de Bashung. » - LES INROCKUPTIBLES
-							</p>
-						</article>
-					</div>
-				
+					<article id="bio"> <img id="biopicture" src="img/headerabout.jpg" alt="duelbio">
+						<p> DUEL c’est l’histoire en marche de deux frères qui le sont devenus, l’alchimie Pop entre Julien Boulfray et Brieuc Carnaille, deux auteurs compositeurs qui se complètent, deux voix qui se répondent.
+							<br>
+							<br> Après avoir partagé la scène partout en France (Printemps de Bourges, Bars en Trans…), à Paris (La Cigale, La Boule Noire…), en Europe (Bruxelles, Amsterdam, Londres) ou à New-York avec des artistes tels que Feu! Chatterton, Talisco, Christophe, Camélia Jordana ou encore Pete Doherty, DUEL sort son premier album "GUNNN EXPRESS" le 23 février 2015. Les singles « Caramel » et « Hey, tu ne me manqueras plus » sont notamment diffusés sur Virgin Radio, RTL 2 ou Ouï Fm.
+							<br>
+							<br> Le duo enregistre dans la foulée les maquettes de son successeur attendu pour 2017.
+							<br>
+							<br> « Ils rappellent les travaux de Gaëtan Roussel par cette façon de croiser les influences et de jouer la pop sans complexe dans la langue de Bashung. » - LES INROCKUPTIBLES </p>
+					</article>
+				</div>
 			</section>
 			<section id="tour">
 				<div class="wrap2">
-					<div class="titletour">
-						<img src="img/logoduelgrey.svg" alt="logoduelgrey">
-					</div>
+					<div class="titletour"> <img src="img/logoduelgrey.svg" alt="logoduelgrey"> </div>
 					<div id="dates">
 						<article class="comingsoon">
 							<p>Prochainement</p>
-
-
 						</article>
 						<!--<article>
 							<p> 23 mars 2016</p>
@@ -868,8 +721,7 @@
 		<footer id="footer">
 			<ul>
 				<li><a href="http://www.roymusic.com/#" target="_blank">  Roymusic </a></li>
-				<li id="emailduel"><a href="mailto@contact@duelmusic.com" >contact@duelmusic.com</a>
-				</li>
+				<li id="emailduel"><a href="mailto@contact@duelmusic.com">contact@duelmusic.com</a> </li>
 				<li><a href="http://monstertruckagency.com/" target="_blank"> Crédits </a></li>
 			</ul>
 			<p> 2016©copyright Duel </p>
