@@ -16,11 +16,32 @@ $(document).ready(function () {
 
 	$('#button').click(function () {
 		$('.content').toggleClass('animatemain');
+		$('.nav').toggleClass('navopen');
 	});
 	$('.accordion').click(function () {
 		$('.content').toggleClass('movebottom');
 	});
-	
+
+	var mobilenavlinks = $('.navmobile li a');
+	mobilenavlinks.click(function (event) {
+		var targ = $(event.target);
+
+		if (targ.hasClass('accordion')) {
+
+		} else if (targ.not('.accordion')) {
+			$('#button').toggleClass('open');
+			$('.content').removeClass('animatemain');
+			$('.nav').toggleClass('navopen');
+		}
+
+	});
+
+	$('#homelogo a').click(function () {
+		$('.content').removeClass('animatemain');
+		$('.nav').removeClass('navopen');
+	});
+
+
 
 	var codeElements = document.getElementsByTagName("code");
 	console.log(codeElements);

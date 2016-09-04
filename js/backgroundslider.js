@@ -20,20 +20,20 @@ function setSlider() {
 
 
 function toggleCurrentslide() {
-	// change z index of current slide to 0// 
+	// change z index of current slide to 0//
 	$(currentSlide).css('z-index', 0);
 	currentSlide[0].style.opacity = "1";
 	// change z index of queuded slides //
 	for (var jindex = 0; jindex <= queudedSlides.length - 1; jindex++) {
 
 		var newZindex = parseInt($(queudedSlides[jindex]).css('z-index')) + 1;
-		
+
 		$(queudedSlides[jindex]).css('z-index', newZindex);
-	
-		
+
+
 
 	}
-	
+
 	// update currentslide//
 	if (slideIndex < slides.length - 1) {
 		slideIndex++;
@@ -52,7 +52,7 @@ function toggleCurrentslide() {
 	currentSlide.addClass('currentslide');
 	for (var slidei = 0; slidei <= slides.length - 1; slidei++) {
 		slides[slidei].style.opacity = "1";
-		
+
 	}
 
 }
@@ -88,13 +88,13 @@ function loop() {
 	});
 
 }
-*/	
+*/
 
 
 $(window).load(function () {
 $(".backgroundslider > div:gt(0)").hide();
 
-setInterval(function() { 
+var backgroundLoop =  setInterval(function() {
   $('.backgroundslider > div:first')
     .fadeOut(1000)
     .next()
@@ -102,7 +102,15 @@ setInterval(function() {
     .end()
     .appendTo('.backgroundslider');
 },  6000);
-	//setSlider();//
-	//startLoop();//
+
+// STOP LOOP IN CASE OF MOBILE VIEW//
+var mq = window.matchMedia( "(max-width: 800px)" );
+
+if (mq.matches) {
+  clearInterval(backgroundLoop);
+} else {
+
+}
+
 
 });

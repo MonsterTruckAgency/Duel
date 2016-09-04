@@ -13,24 +13,23 @@ function stopVid(){
 	};
 
 }
-
-
 //***************************************************************** scroll to sections //************************************/
 
 $('.navmobile a, .navfull a').on('click', function (event) {
 
 	var target = $($(this).attr('href'));
 
-
 	if (target.length) {
+
 		event.preventDefault();
-		$('html, body').animate({
-			scrollTop: target.offset().top
+		var newScroll = target.position().top;
+	
+		$('html').animate({
+			scrollTop: newScroll
 		}, 1000);
 	}
 
 });
-
 
 //*****************************************************************animations on scroll //************************************/
 
@@ -228,4 +227,6 @@ $('#lyrics a').bind('click', function (event) {
 });
 
 
-//PLAYER AND LAZYT//
+//********************MOBILE*********************************//
+
+//STOPS BS SLIDER WHEN ON MOBILE VIEW//
