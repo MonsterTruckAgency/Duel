@@ -48,6 +48,7 @@
 	margin-left: 3%;
 	position: fixed;
 	padding-top: 2.5%;
+	visibility: visible;
 	/**/
 }
 
@@ -105,6 +106,7 @@
 	justify-content: space-around;
 	padding-bottom: 10%;
 	padding-top: 10%;
+	visibility: visible;
 
 	
 		
@@ -131,6 +133,8 @@ code {
 
 .navmobile {
 	display: none;
+	visibility: hidden;
+	
 
 
 }
@@ -237,6 +241,7 @@ code {
 	width: 25%;
 	margin-top: 3%;
 	margin-right: 4%;
+	visibility: visible;
 }
 
 /**** ************************ Headermobile.HTML display****************************/
