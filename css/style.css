@@ -658,60 +658,69 @@ video {
 #tour {
 	background-color: #EBEBEB;
 	padding-top: 5%;
-	max-height: 100vh;
-	align-items: center;
+	height: 100vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-end;
+	
 }
 
-.titletour {
-	width: 100%;
-	align-items: center;
+.wrap2{
+	height: 90%;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	
+	
 }
 
-#tour div:first-child {
-	width: 100%;
-	text-align: center;
-}
 
-#tour img {
-	width: 25%;
-	display: none;
-}
+
 
 #dates {
 	text-align: center;
 	color: #808080;
-	padding-top: 15%;
-	padding-bottom: 10%;
+	
+	
 }
 
-#dates article {
-	display: inline-block;
-	border: 1px solid #808080;
-	font-size: 1.6vw;
-	padding: 5% 5% 5% 5%;
-	margin: 0 10% 0 10%;
-}
 
-#dates article a {
-	color: #808080;
-	border: 1px solid #808080;
-	font-size: 1.2rem;
-}
 
-#dates p {
-	padding: 20% 0 20% 0;
-}
-
-#dates a {
-	padding: 10%;
-	margin: 10%;
-	display: block;
-}
 
 .comingsoon {
 	border: none!important;
 	font-size: 1.5rem!important;
 }
+
+#footer {
+	width: 100%;
+	text-align: center;
+	font-size: .9rem;
+	height: 5%;
+	letter-spacing: .2vw;
+}
+#footer ul {
+	text-align: center;
+	width: 100%;
+	margin: 0 auto;
+}
+
+#footer li a {
+	text-decoration: none!important;
+	color: black;
+	display: inline-block;
+}
+
+#footer li {
+	display: inline;
+	padding:2%
+}
+
+#footer p {
+	padding: 1vw;
+	font-size: .9rem;
+}
+
 
 
 /*****CONTACT******/
@@ -791,35 +800,9 @@ video {
 	box-sizing: border-box;
 }
 
-#footer {
-	width: 100%;
-	text-align: center;
-	font-size: .9rem;
-	margin-top: 10%;
-	letter-spacing: .2vw;
-}
 
-#footer ul {
-	text-align: center;
-	width: 100%;
-	margin: 0 auto;
-}
 
-#footer li a {
-	text-decoration: none!important;
-	color: black;
-	display: inline-block;
-}
 
-#footer li {
-	display: inline;
-	padding: 2vw 5vw 2vw 5vw;
-}
-
-#footer p {
-	padding: 1vw;
-	font-size: .9rem;
-}
 
 
 /* REPONSIVE*/
@@ -912,7 +895,7 @@ video {
 
 
 	}
-
+	
 	/* LYRICS*/
 	#musicbackground{
 		background: none;
@@ -965,5 +948,53 @@ video {
 		padding-bottom: 200px!important;
 
 	}
-
+	/* photos*/
+	#photos .wrap{
+		padding-top: 0%;
+		
+	}
+	#slider{
+		padding-left: 0;
+	}
+	.flexslider{
+		margin: 0 auto;
+	}
+	.flex-caption{
+		padding-top: 3%;
+	}
+	.flex-caption::before{
+		content:"";
+	}
+	
+	#photos .flex-direction-nav a::before {
+    font-size: 1.5rem;
+	color:grey;
+	}
+	
+	/*BIO*/
+	#about .wrap{
+		margin:0 auto;
+		width: auto;
+		padding:0;
+		height: 100vh;
+		padding-top: 15%
+		
+	}
+	#bio p{
+		overflow-y: scroll;
+		height: 55vh;
+		padding-top: 5%;
+		padding-bottom: 5%;
+		padding:5% 15% 5% 15%;
+		
+		
+	}
+	
+	#tour{
+		padding-top: 0;
+	}
+	
+	#footer{
+		height: 5vh;
+	}
 }

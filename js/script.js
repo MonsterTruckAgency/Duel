@@ -39,7 +39,7 @@ var videosOffset = (Math.floor(($('#videos').offset()).top));
 
 var photosOffset = Math.floor(($('#photos').offset()).top);
 
-var contactOffset = Math.floor(($('#contact').offset()).top);
+//var contactOffset = Math.floor(($('#contact').offset()).top);//
 
 var aboutOffset = Math.floor(($('#about').offset()).top);
 

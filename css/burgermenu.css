@@ -94,12 +94,21 @@
 	opacity: 0;
 	transform: translateY(-100%);
 	transition: .6s;
-	height: 50vh;
+	height: 90vh;
 	position: absolute;
 	z-index: -1;
-	padding-top: 2%;
+	
 	top:0;
-	background: #696969;
+	background: #eaebec;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	padding-bottom: 10%;
+	padding-top: 10%;
+
+	
+		
+	
 }
 
 .navopen {
@@ -113,11 +122,11 @@ code {
 }
 
 .nav li {
-	width: 95%;
+	padding-left: 15%;
 	background: none;
-	text-align: left;
-	margin-left: 5%;
-	padding: 2.5% 0 2.5% 0;
+	
+	
+	
 }
 
 .navmobile {
@@ -132,13 +141,13 @@ code {
 
 .nav a {
 	text-decoration: none;
-	display: block;
+	display: inline-block;
 	letter-spacing: .4rem;
-	width: 100%;
+	
 	letter-spacing: .1rem;
-	color: white;
-	margin: 0 10% 0 10%;
-	font-size: 1.5rem;
+	color: #696969;
+	
+	font-size: 2.5rem;
 }
 
 .nav a:hover {
