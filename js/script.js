@@ -24,7 +24,7 @@ $('.navmobile a, .navfull a').on('click', function (event) {
 		event.preventDefault();
 		var newScroll = target.position().top;
 	
-		$('html').animate({
+		$('html,body').animate({
 			scrollTop: newScroll
 		}, 1000);
 	}

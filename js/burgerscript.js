@@ -6,6 +6,8 @@ $(document).ready(function () {
 	var moveLi = $(titles).not('targetli');
 	$(moveLi).addClass('accordionmove');
 	$(targetli).removeClass('accordionmove');
+	$('.nav').addClass('navclose');
+	$('.content').addClass('animateupmain');
 	console.log(titles);
 
 	$('.accordion').click(function (e) {
@@ -16,7 +18,10 @@ $(document).ready(function () {
 
 	$('#button').click(function () {
 		$('.content').toggleClass('animatemain');
+		$('.content').toggleClass('animateupmain');
 		$('.nav').toggleClass('navopen');
+		$('.nav').toggleClass('navclose');
+		
 	});
 	$('.accordion').click(function () {
 		$('.content').toggleClass('movebottom');
@@ -30,8 +35,10 @@ $(document).ready(function () {
 
 		} else if (targ.not('.accordion')) {
 			$('#button').toggleClass('open');
-			$('.content').removeClass('animatemain');
+			$('.content').toggleClass('animatemain');
+			$('.content').toggleClass('animateupmain');
 			$('.nav').toggleClass('navopen');
+			$('.nav').toggleClass('navclose');
 		}
 
 	});
