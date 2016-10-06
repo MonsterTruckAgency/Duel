@@ -7,7 +7,8 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title> Duel </title>
 	<link rel="stylesheet" href="css/reset.css" />
-	<link rel="stylesheet" href="css/load.css" />
+	<link rel="stylesheet" href="css/animsition.min.css">
+
 	<link rel="stylesheet" href="css/flexslider.css" type="text/css" media="screen" />
 	<link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/smoothness/jquery-ui.css">
 	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" rel="stylesheet">
@@ -15,11 +16,14 @@
 	<link rel="stylesheet" href="css/burgermenu.css" />
 	<link rel="stylesheet" href="css/lazyYT.css" />
 	<link rel="stylesheet" href="css/jquery.mCustomScrollbar.css" />
+
 	<link rel="stylesheet" href="css/style.css" />
-	<script type="text/javascript" src="js/load.js"></script>
+
 	<script type="text/javascript" src="http://code.jquery.com/jquery-1.9.1.js"></script>
 	<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
 	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+		<script src="js/animsition.min.js"></script>
+
 	<script defer src="js/jquery.flexslider.js"></script>
 	<script type="text/javascript" src="js/lazyYT.js"></script>
 	<script type="text/javascript" src="js/burgerscript.js"></script>
@@ -27,9 +31,9 @@
 </head>
 
 <body>
-	<div id="load"></div>
-	<div id="contents" class="burgerwrap">
+	<div id="contents" class="burgerwrap animsition">
 		<div id="menu" class="navfull">
+			<div>
 			<a id="backhome" href="#home"> <img id="logosmall" class="logoblack" src="img/logoduelblack.svg" alt="duellogo"> </a>
 			<ul id="categories">
 				<li><a href="#music2"> Musique </a></li>
@@ -39,7 +43,7 @@
 				<li><a href="#about">Bio </a></li>
 				<li><a href="#tour">Live </a></li>
 				<!--<li><a href="#contact"> Contact</a></li>-->
-			</ul>
+				</ul></div>
 			<div class="communityicons"> <a target="_blank" href="https://www.facebook.com/groupeduel"><span><i class="fa fa-facebook-official"></i></span></a> <a href="https://twitter.com/duel_music" target="blank"><span><i class="fa fa-twitter"></i></span></a> <a href="http://youtu.be/_lFTpbSQ7aM?list=PLfkgNFtqEpzTOjccq1pn7HV2VSEYg1L9c" target="blank"><span><i class="fa fa-youtube-play"></i></span></a> </div>
 		</div>
 		<div class="navmobile"> <b class="button" id="button"><span class="barra"></span> <span class=
@@ -472,7 +476,7 @@
 					<div class="flexslider vidplayer">
 						<ul class="slides">
 							<li>
-								<div class="js-lazyYT" data-youtube-id="yxvrcMa9N0I" data-width="500" data-height="333" data-parameters="showinfo=0"></div>
+								<div class="js-lazyYT" data-youtube-id="yxvrcMa9N0I" data-width="850" data-height="478" data-parameters="showinfo=0"></div>
 								<!--<iframe class="videos" src="https://www.youtube.com/embed/yxvrcMa9N0I?showinfo=0" frameborder="0" allowfullscreen></iframe>-->
 								<div class="titlewrap">
 									<div class="videotitle"> Vertigo </div>
@@ -480,42 +484,42 @@
 								</div>
 							</li>
 							<li>
-								<div class="js-lazyYT" data-youtube-id="0RE7Apq3M84" data-width="500" data-height="333" data-parameters="showinfo=0"></div>
+								<div class="js-lazyYT" data-youtube-id="0RE7Apq3M84" data-width="850" data-height="478" data-parameters="showinfo=0"></div>
 								<div class="titlewrap">
 									<div class="videotitle"> Austerlitz</div>
 									<p class="itunes"><a href="https://itunes.apple.com/fr/album/gunnn-express/id966370899" target="_blank">itunes</a></p>
 								</div>
 							</li>
 							<li>
-								<div class="js-lazyYT" data-youtube-id="gume0Am9rxE" data-width="500" data-height="333" data-parameters="showinfo=0"></div>
+								<div class="js-lazyYT" data-youtube-id="gume0Am9rxE" data-width="850" data-height="478" data-parameters="showinfo=0"></div>
 								<div class="titlewrap">
 									<div class="videotitle"> Caramel</div>
 									<p class="itunes"><a href="https://itunes.apple.com/fr/album/gunnn-express/id966370899" target="_blank">itunes</a></p>
 								</div>
 							</li>
 							<li>
-								<div class="js-lazyYT" data-youtube-id="GnTXOmI2R50" data-width="500" data-height="333" data-parameters="showinfo=0"></div>
+								<div class="js-lazyYT" data-youtube-id="GnTXOmI2R50" data-width="850" data-height="478" data-parameters="showinfo=0"></div>
 								<div class="titlewrap">
 									<div class="videotitle"> Amsterdam </div>
 									<p class="itunes"><a href="https://itunes.apple.com/fr/album/gunnn-express/id966370899" target="_blank">itunes</a></p>
 								</div>
 							</li>
 							<li>
-								<div class="js-lazyYT" data-youtube-id="_lFTpbSQ7aM" data-width="500" data-height="333" data-parameters="showinfo=0"></div>
+								<div class="js-lazyYT" data-youtube-id="_lFTpbSQ7aM" data-width="850" data-height="478" data-parameters="showinfo=0"></div>
 								<div class="titlewrap">
 									<div class="videotitle"> Hey, tu ne me manqueras plus</div>
 									<p class="itunes"><a href="https://itunes.apple.com/fr/album/gunnn-express/id966370899" target="_blank">itunes</a></p>
 								</div>
 							</li>
 							<li>
-								<div class="js-lazyYT" data-youtube-id="83B2G0DARvI" data-width="500" data-height="333" data-parameters="showinfo=0"></div>
+								<div class="js-lazyYT" data-youtube-id="83B2G0DARvI" data-width="850" data-height="478" data-parameters="showinfo=0"></div>
 								<div class="titlewrap">
 									<div class="videotitle"> A Voronej</div>
 									<p class="itunes"><a href="https://itunes.apple.com/fr/album/gunnn-express/id966370899" target="_blank">itunes</a></p>
 								</div>
 							</li>
 							<li>
-								<div class="js-lazyYT" data-youtube-id="wzRLPxF6y9w" data-width="500" data-height="333" data-parameters="showinfo=0"></div>
+								<div class="js-lazyYT" data-youtube-id="wzRLPxF6y9w" data-width="850" data-height="478" data-parameters="showinfo=0"></div>
 								<div class="titlewrap">
 									<div class="videotitle"> Ville lumière </div>
 									<p class="itunes"><a href="https://itunes.apple.com/fr/album/gunnn-express/id966370899" target="_blank">itunes</a></p>
@@ -650,25 +654,25 @@
 						<div class="flexslider">
 							<ul class="slides">
 								<li> <img src="img/slider/sliderpic1.jpg" alt="sliderpic1" />
-									<p class="flex-caption"> Adventurer Cheesecake Brownie azeaze aezeaze zaeaeee zaeaazaezea aazeeaaeeazzae azazez ezaeaze</p>
+									<p class="flex-caption">© Olivier Muller</p>
 								</li>
 								<li> <img src="img/slider/sliderpic2.jpg" alt="sliderpic2" />
-									<p class="flex-caption"> Adventurer Cheesecake Brownie azeaze aezeaze zaeaeee zaeaazaezea aazeeaaeeazzae azazez ezaeaze</p>
+									<p class="flex-caption">© François Laloyer</p>
 								</li>
 								<li> <img src="img/slider/sliderpic3.jpg" alt="sliderpic3" />
-									<p class="flex-caption"> Adventurer Cheesecake Brownie azeaze aezeaze zaeaeee zaeaazaezea aazeeaaeeazzae azazez ezaeaze</p>
+									<p class="flex-caption">© Olivier Muller</p>
 								</li>
 								<li> <img src="img/slider/sliderpic4.jpg" alt="sliderpic4" />
-									<p class="flex-caption"> Adventurer Cheesecake Brownie azeaze aezeaze zaeaeee zaeaazaezea aazeeaaeeazzae azazez ezaeaze</p>
+									<p class="flex-caption">© Olivier Muller</p>
 								</li>
 								<li> <img src="img/slider/sliderpic5.jpg" alt="sliderpic5" />
-									<p class="flex-caption"> Adventurer Cheesecake Brownie azeaze aezeaze zaeaeee zaeaazaezea aazeeaaeeazzae azazez ezaeaze</p>
+									<p class="flex-caption">© Lucie Martin</p>
 								</li>
 								<li> <img src="img/slider/sliderpic6.jpg" alt="sliderpic6" />
-									<p class="flex-caption"> Adventurer Cheesecake Brownie azeaze aezeaze zaeaeee zaeaazaezea aazeeaaeeazzae azazez ezaeaze</p>
+									<p class="flex-caption">© Franck Bohbot</p>
 								</li>
 								<li> <img src="img/slider/sliderpic7.jpg" alt="sliderpic7" />
-									<p class="flex-caption"> Adventurer Cheesecake Brownie azeaze aezeaze zaeaeee zaeaazaezea aazeeaaeeazzae azazez ezaeaze</p>
+									<p class="flex-caption">© Florie Berger</p>
 								</li>
 							</ul>
 						</div>
@@ -677,14 +681,15 @@
 			</section>
 			<section id="about">
 				<div class="wrap">
-					<article id="bio"> <img id="biopicture" src="img/headerabout.jpg" alt="duelbio">
-						<p> DUEL c’est l’histoire en marche de deux frères qui le sont devenus, l’alchimie Pop entre Julien Boulfray et Brieuc Carnaille, deux auteurs compositeurs qui se complètent, deux voix qui se répondent.
+					<article id="bio"> 
+						<div><img id="biopicture" src="img/headerabout.jpg" alt="duelbio"></div>
+						<div><p> DUEL c’est l’histoire en marche de deux frères qui le sont devenus, l’alchimie Pop entre Julien Boulfray et Brieuc Carnaille, deux auteurs compositeurs qui se complètent, deux voix qui se répondent.
 							<br>
 							<br> Après avoir partagé la scène partout en France (Printemps de Bourges, Bars en Trans…), à Paris (La Cigale, La Boule Noire…), en Europe (Bruxelles, Amsterdam, Londres) ou à New-York avec des artistes tels que Feu! Chatterton, Talisco, Christophe, Camélia Jordana ou encore Pete Doherty, DUEL sort son premier album "GUNNN EXPRESS" le 23 février 2015. Les singles « Caramel » et « Hey, tu ne me manqueras plus » sont notamment diffusés sur Virgin Radio, RTL 2 ou Ouï Fm.
 							<br>
 							<br> Le duo enregistre dans la foulée les maquettes de son successeur attendu pour 2017.
 							<br>
-							<br> « Ils rappellent les travaux de Gaëtan Roussel par cette façon de croiser les influences et de jouer la pop sans complexe dans la langue de Bashung. » - LES INROCKUPTIBLES </p>
+							<br> « Ils rappellent les travaux de Gaëtan Roussel par cette façon de croiser les influences et de jouer la pop sans complexe dans la langue de Bashung. » - LES INROCKUPTIBLES </p></div>
 					</article>
 				</div>
 			</section>
