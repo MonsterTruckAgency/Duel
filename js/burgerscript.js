@@ -1,5 +1,4 @@
 $(document).ready(function () {
-
 	var titles = $('ul.nav.menu').children();
 	var targetli = $('.accordiontarget').parent();
 	$(targetli).addClass('targetli');
@@ -8,55 +7,44 @@ $(document).ready(function () {
 	$(targetli).removeClass('accordionmove');
 	$('.nav').addClass('navclose');
 	$('.content').addClass('animateupmain');
-	console.log(titles);
-
 	$('.accordion').click(function (e) {
 		e.preventDefault();
 		$('.accordiontarget').toggleClass('accordionopen');
 		$('.accordionmove').toggleClass('move');
 	});
-
 	$('#button').click(function () {
 		$('.content').toggleClass('animatemain');
 		$('.content').toggleClass('animateupmain');
 		$('.nav').toggleClass('navopen');
 		$('.nav').toggleClass('navclose');
-		
 	});
 	$('.accordion').click(function () {
 		$('.content').toggleClass('movebottom');
 	});
-
 	var mobilenavlinks = $('.navmobile li a');
 	mobilenavlinks.click(function (event) {
 		var targ = $(event.target);
-
-		if (targ.hasClass('accordion')) {
-
-		} else if (targ.not('.accordion')) {
+		if (targ.hasClass('accordion')) {}
+		else if (targ.not('.accordion')) {
 			$('#button').toggleClass('open');
 			$('.content').toggleClass('animatemain');
 			$('.content').toggleClass('animateupmain');
 			$('.nav').toggleClass('navopen');
 			$('.nav').toggleClass('navclose');
 		}
-
 	});
-
 	$('#homelogo a').click(function () {
+		$('#button').removeClass('open');
 		$('.content').removeClass('animatemain');
+		$('.content').removeClass('animateupmain');
 		$('.nav').removeClass('navopen');
+		$('.nav').addClass('navclose');
 	});
-
-
-
 	var codeElements = document.getElementsByTagName("code");
-	console.log(codeElements);
 	var i = codeElements.length;
 	var delimiter = "clicking on";
 	var codeBlock;
 	var codeBlockContent;
-
 	while (i--) {
 		var code = codeElements[i]
 		var content = code.textContent.trim()
@@ -66,14 +54,12 @@ $(document).ready(function () {
 			break;
 		}
 	}
-
 	if (!codeBlock) return
 	codeBlock.parentNode.removeChild(codeBlock)
 
 	function InstructionParsing(instruction) {
 		var separator = instruction.charAt(0)
 		var instructionSplit = instruction.split(separator)
-
 		this.clickSelector = instructionSplit[1]
 		this.classBehavior = instructionSplit[2].trim().split(" ")[0]
 		this.classValue = instructionSplit[3]
@@ -87,16 +73,13 @@ $(document).ready(function () {
 		this.targetSelector = targetSelector;
 		this.createEventListener();
 	}
-
 	UIElement.prototype.createEventListener = function () {
 		var self = this;
 		var clicked = document.querySelectorAll(self.clickSelector);
 		var i = clicked.length;
-
 		if (i < 1) {
 			throw new Error("There's no element matching your \"" + self.clickSelector + "\" CSS selector.");
 		}
-
 		while (i--) {
 			clicked.item(i).addEventListener("click", clickCallback);
 		}
@@ -126,16 +109,10 @@ $(document).ready(function () {
 			}
 		}
 	}
-
 	codeBlockContent.split(delimiter).forEach(function (data) {
 		if (!data) return;
 		var params = new InstructionParsing(data.trim());
-		new UIElement(
-			params.clickSelector
-			, params.classBehavior
-			, params.classValue
-			, params.targetSelector
-		);
+		new UIElement(params.clickSelector, params.classBehavior, params.classValue, params.targetSelector);
 	});
 	/*
 	// article adaptation
@@ -151,5 +128,4 @@ $(document).ready(function () {
 		var adaptInfos = $(this).find('.adapt-infos');
 		adaptInfos.toggleClass('adapt-infos-visible');
 	}*/
-
 });
