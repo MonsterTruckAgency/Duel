@@ -899,9 +899,6 @@ video {
 		flex-direction: column;
 		height: 100vh;
 	}
-	.backgroundslider div:last-child {
-		visibility: hidden;
-	}
 	#music2 img {
 		padding: 0;
 		margin: 0;

@@ -1,5 +1,7 @@
 var mq = window.matchMedia("(max-width: 800px)");
-if (mq.matches) {}
+if (mq.matches) {
+	$(".backgroundslider > div:gt(0)").hide();
+}
 else {
 	$(".backgroundslider > div:gt(0)").hide();
 	var backgroundLoop = setInterval(function () {
