@@ -23,14 +23,6 @@ $(".animsition").animsition({
 //*VIDEO PLAYER*//
 $('.js-lazyYT').lazyYT();
 //STOP VIDEOS WHEN CLICK ON ARROWS//
-function stopVid() {
-	var player = document.getElementsByClassName('vids');
-	alert();
-	for (var vindex = 0; vindex <= player.length - 1; vindex++) {
-		//$('#popup-youtube-player').stopVideo();
-		$(player)[vindex].contentWindow.postMessage('{"event":"command","func":"' + 'stopVideo' + '","args":""}', '*');
-	};
-}
 //***************************************************************** scroll to sections //************************************/
 $('.navmobile a, .navfull a,.logomobile').on('click', function (event) {
 	var target = $($(this).attr('href'));
@@ -198,6 +190,18 @@ $('#lyrics a').bind('click', function (event) {
 	$(this).toggleClass('linkactive');
 	$('.visible').removeClass('visible');
 	$(lyricsTargets[linkOrigindata]).addClass('visible');
+});
+$(window).load(function () {
+	function stopVid() {
+		var player = document.getElementsByClassName('vids');
+		for (var vindex = 0; vindex <= player.length - 1; vindex++) {
+			//$('#popup-youtube-player').stopVideo();
+			$(player)[vindex].contentWindow.postMessage('{"event":"command","func":"' + 'stopVideo' + '","args":""}', '*');
+		};
+	}
+	$('#videos .flex-direction-nav a').click(function () {
+		stopVid();
+	});
 });
 //********************MOBILE*********************************//
 //STOPS BS SLIDER WHEN ON MOBILE VIEW//
