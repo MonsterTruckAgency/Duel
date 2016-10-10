@@ -263,7 +263,7 @@ i.fa-twitter-square {
 
 .gun {
 	width: 54%;
-	margin-right: 10%;
+	margin-left: 5%;
 	padding-top: 2%;
 	float: left;
 }
@@ -380,7 +380,8 @@ i.fa-twitter-square {
 }
 
 #videos .flexslider {
-	max-width: 69%!important;
+	    max-width: 64%!important;
+    margin-left: 14% !important;
 }
 
 #videos .wrap {
@@ -526,7 +527,7 @@ video {
 /***** PHOTOS *******/
 
 #photos {
-	height: 100vh;
+	height: 105vh;
 }
 
 #photos .wrap {
@@ -545,6 +546,7 @@ video {
 #slider {
 	width: 100%;
 	padding-left: 13%;
+    
 }
 
 #slider img {}
@@ -593,11 +595,12 @@ video {
 .slides {}
 
 .flexslider {
-	max-width: 69%;
+	max-width: 65%;
 	background: none;
 	border: none;
 	box-shadow: none;
 	margin: 0px;
+   
 }
 
 .flex-caption {
@@ -650,7 +653,7 @@ video {
 #about {}
 
 #about .wrap {
-	padding-right: 14.5vw;
+	padding-right: 10.5vw;
 }
 
 #biopicture {
@@ -670,6 +673,8 @@ video {
 #bio div:last-child {
 	padding: 3% 23% 5% 23%;
 	word-spacing: 1.%;
+    text-align: justify;
+        line-height: 1.2rem;
 }
 
 #bio p {}
