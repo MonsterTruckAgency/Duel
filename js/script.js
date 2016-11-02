@@ -80,6 +80,12 @@ $(window).scroll(function () {
 	else {
 		menuLinks[5].classList.remove('sectionactive');
 	}
+	if (window.scrollY >= tourOffset) {
+		menuLinks[6].classList.add('sectionactive');
+	}
+	else {
+		menuLinks[6].classList.remove('sectionactive');
+	}
 	// scroll bottom offset //
 	var offsetBottom = $(window).scrollTop() + $(window).height();
 	// menu and logo offset //

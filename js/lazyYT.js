@@ -143,10 +143,12 @@
 			thumb_img = 'mqdefault.jpg';
 		}
 		else if (width == 0) { // sometimes it still might fail on fluid layout
+			
 			thumb_img = 'hqdefault.jpg';
 		}
 		else {
-			thumb_img = 'default.jpg';
+			
+			thumb_img = 'sddefault.jpg';
 		}
 		thumb_url = ['https://img.youtube.com/vi/', id, '/', thumb_img].join('');
 		downloadingImage.onload = function (data) {

@@ -86,7 +86,7 @@ section {
 	font-size: 1.2rem;
 	width: 100%;
 	margin-left: 15%;
-    margin-top: 13%;
+	margin-top: 13%;
 }
 
 #menu a:first-child {}
@@ -270,12 +270,9 @@ i.fa-twitter-square {
 
 .gun img {
 	width: 100%;
-<<<<<<< Updated upstream
-	padding-right: 5%;
-=======
-	padding-left: 5%;
-
->>>>>>> Stashed changes
+	<<<<<<< Updated upstream padding-right: 5%;
+	=======padding-left: 5%;
+	>>>>>>> Stashed changes
 }
 
 
@@ -288,7 +285,7 @@ i.fa-twitter-square {
 	padding-right: 5vw;
 	padding-left: 5vw;
 	padding-top: 4vw;
-    padding-bottom: 4vw;
+	padding-bottom: 4vw;
 }
 
 #music {
@@ -380,8 +377,8 @@ i.fa-twitter-square {
 }
 
 #videos .flexslider {
-	    max-width: 64%!important;
-    margin-left: 14% !important;
+	max-width: 64%;
+	margin-left: 14% !important;
 }
 
 #videos .wrap {
@@ -430,12 +427,12 @@ i.fa-twitter-square {
 .vidplayer .flex-direction-nav a::before {
 	font-size: 1.4vw;
 }
-
+/*
 .lazyYT-container {
 	margin: 0 auto;
-    width: 95% !important;
-    padding-top: 5.5% !important;
-}
+	width: 95% !important;
+	padding-top: 5.5% !important;
+}*/
 
 .html5-title {
 	text-decoration: none;
@@ -446,26 +443,28 @@ i.fa-twitter-square {
 /*
 video {
 	width: 100%;
-}
+}*/
 
+#videos .flexslider .slides > li {
+	padding-top: 1px}
 #videos iframe {
-	width: 100%;
-	height: 50vh;
+	width: 100%!important;
+	height: 100%!important;
 	text-align: right;
 	margin: 0 auto;
 	margin-left: auto;
 	text-align: center;
 	text-align: center;
-}*/
+}
 
 .lazyYT-container .html5-title-text-wrapper {
 	display: none;
 }
 
 .titlewrap {
-	width: 60%;
-	margin-left: 20%;
-	text-align: center
+	width: 100%;
+	text-align: center;
+	padding-top: 2%;
 }
 
 .videotitle {
@@ -500,8 +499,7 @@ video {
 .itunes {
 	text-align: center;
 	font-size: .7rem;
-	padding-top: 3%;
-	padding-bottom: 10%;
+	margin-top: 2%;
 	text-decoration: none;
 	color: white;
 	letter-spacing: .2rem;
@@ -530,6 +528,10 @@ video {
 	height: 105vh;
 }
 
+.flex-caption::before {
+	content: "";
+}
+
 #photos .wrap {
 	display: -webkit-box;
 	display: -ms-flexbox;
@@ -545,8 +547,6 @@ video {
 
 #slider {
 	width: 100%;
-	padding-left: 13%;
-    
 }
 
 #slider img {}
@@ -600,7 +600,11 @@ video {
 	border: none;
 	box-shadow: none;
 	margin: 0px;
-   
+}
+
+#photos .flexslider {
+	max-width: 65%;
+	margin: 0 auto;
 }
 
 .flex-caption {
@@ -613,7 +617,6 @@ video {
 }
 
 .flex-caption::before {
-	content: "_______________________________";
 	display: block;
 	margin-bottom: 2%
 }
@@ -673,8 +676,8 @@ video {
 #bio div:last-child {
 	padding: 3% 23% 5% 23%;
 	word-spacing: 1.%;
-    text-align: justify;
-        line-height: 1.2rem;
+	text-align: justify;
+	line-height: 1.2rem;
 }
 
 #bio p {}
@@ -999,7 +1002,7 @@ video {
 	.vidplayer .flex-direction-nav {
 		-webkit-transform: rotate(90deg);
 		transform: rotate(90deg);
-		left: -37%;
+		left: -25%;
 		width: 50%;
 	}
 	.videotitle.letterEffect {
@@ -1021,13 +1024,16 @@ video {
 		letter-spacing: .2rem;
 		font-size: .7rem;
 	}
-	.lazyYT-container {
+	/*.lazyYT-container {
 		width: 100%!important;
 		padding-bottom: 200px!important;
-	}
+	}*/
 	/* photos*/
 	#photos .wrap {
 		padding-top: 0%;
+		padding: 5%;
+		padding-top: 20%;
+		padding-bottom: 20%;
 	}
 	#slider {
 		padding-left: 0;
@@ -1035,11 +1041,11 @@ video {
 	.flexslider {
 		margin: 0 auto;
 	}
+	#photos .flexslider {
+		max-width: 100%;
+	}
 	.flex-caption {
 		padding-top: 3%;
-	}
-	.flex-caption::before {
-		content: "";
 	}
 	#photos .flex-direction-nav a::before {
 		font-size: 1.5rem;
@@ -1051,7 +1057,6 @@ video {
 		width: auto;
 		padding: 0;
 		height: 100vh;
-		padding-top: 15%
 	}
 	#bio p {
 		overflow-y: scroll;
@@ -1065,5 +1070,30 @@ video {
 	}
 	#footer {
 		height: 10%;
+	}
+	#videos .flexslider {
+		margin-bottom: 20px !important;
+		margin-left: auto!important;
+	}
+	.wrap {
+		margin-top: 0;
+		height: auto!important;
+	}
+	.backgroundslider {
+		min-height: auto;
+	}
+	.backgroundslider > div {
+		position: inherit;
+	}
+	section {
+		height: auto!important;
+		min-height: auto!important;
+	}
+	.wrap2 {
+		height: 100vh!important;
+	}
+	
+	#videos .flexslider{
+	max-width:90%;
 	}
 }

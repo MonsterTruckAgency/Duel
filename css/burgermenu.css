@@ -44,11 +44,8 @@
 	width: 50px;
 	height: 50px;
 	box-sizing: border-box;
-	margin-top: 2%;
+	margin-top: 10px;
 	-webkit-tap-highlight-color: transparent;
-	margin-left: 3%;
-	position: fixed;
-	padding-top: 2.5%;
 	visibility: visible;
 	/**/
 }
@@ -113,8 +110,8 @@
 	-ms-flex-pack: distribute;
 	justify-content: space-around;
 	padding-bottom: 10%;
-	padding-top: 10%;
 	visibility: visible;
+	padding-top: 30px;
 }
 
 .navclose {
@@ -247,12 +244,12 @@ code {
 }
 
 #homelogo {
-	text-align: right;
+	padding-left: 10px;
 }
 
 .logomobile {
 	display: inline-block;
-	width: 25%;
+	width: 22%;
 	margin-top: 3%;
 	margin-right: 4%;
 	visibility: visible;
@@ -262,21 +259,24 @@ code {
 /**** ************************ Headermobile.HTML display****************************/
 
 @media (max-width: 800px) {
+	
+	
 	.navfull {
 		display: none!important;
 	}
 	.navmobile {
-		display: inherit;
+		display: flex;
+		flex-direction: row;
+		justify-content: space-around;
 	}
-	.wrap {
-		margin-top: 10%;
-	}
+	
 	#truckwrap {
 		margin-top: 10%;
 	}
 	#truckwrap .community {
 		top: 80%;
 	}
+	
 	.accordionopen {
 		bottom: 40vh !important;
 		display: block;
