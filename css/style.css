@@ -392,6 +392,7 @@ i.fa-twitter-square {
 	-webkit-box-align: center;
 	-ms-flex-align: center;
 	align-items: center;
+	padding:5%;
 }
 
 .vidplayer {
@@ -427,6 +428,8 @@ i.fa-twitter-square {
 .vidplayer .flex-direction-nav a::before {
 	font-size: 1.4vw;
 }
+
+
 /*
 .lazyYT-container {
 	margin: 0 auto;
@@ -446,7 +449,9 @@ video {
 }*/
 
 #videos .flexslider .slides > li {
-	padding-top: 1px}
+	padding-top: 1px
+}
+
 #videos iframe {
 	width: 100%!important;
 	height: 100%!important;
@@ -897,7 +902,10 @@ video {
 
 /************************************************************************************************************** REPONSIVE*********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
 
-@media (max-width: 800px) {
+@media (max-width: 768px) {
+	#photos .flex-caption {
+		font-size: .7em;
+	}
 	.wrap {
 		padding-left: 0;
 		padding-top: 5%;
@@ -949,7 +957,6 @@ video {
 		-webkit-box-align: center;
 		-ms-flex-align: center;
 		align-items: center;
-		
 	}
 	.sectionacheter article {
 		width: 70%;
@@ -1032,8 +1039,7 @@ video {
 	#photos .wrap {
 		padding-top: 0%;
 		padding: 5%;
-		padding-top: 20%;
-		padding-bottom: 20%;
+	
 	}
 	#slider {
 		padding-left: 0;
@@ -1092,8 +1098,14 @@ video {
 	.wrap2 {
 		height: 100vh!important;
 	}
-	
-	#videos .flexslider{
-	max-width:90%;
+	#videos .flexslider {
+		max-width: 90%;
 	}
+	#videos .flex-viewport {
+		width: 90%;
+		margin-left: 10%;
+	}
+
+
+
 }

@@ -149,6 +149,7 @@ code {
 	display: none;
 	position: fixed;
 	z-index: 10000;
+	width:100%;
 }
 
 .nav a {
@@ -161,7 +162,7 @@ code {
 	letter-spacing: .4rem;
 	letter-spacing: .1rem;
 	color: #696969;
-	font-size: 2.5rem;
+	font-size: 1.7rem;
 }
 
 .nav a:hover {
@@ -246,13 +247,13 @@ code {
 }
 
 #homelogo {
-	padding-left: 10px;
+	padding-left: 20px;
 }
 
 .logomobile {
 	display: inline-block;
-	width: 22%;
-	margin-top: 3%;
+	width: 26%;
+	padding-top: 20px;
 	margin-right: 4%;
 	visibility: visible;
 }
@@ -260,7 +261,7 @@ code {
 
 /**** ************************ Headermobile.HTML display****************************/
 
-@media (max-width: 800px) {
+@media (max-width: 768px) {
 	
 	
 	.navfull {
