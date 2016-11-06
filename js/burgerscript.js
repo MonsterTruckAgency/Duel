@@ -17,6 +17,12 @@ $(document).ready(function () {
 		$('.content').toggleClass('animateupmain');
 		$('.nav').toggleClass('navopen');
 		$('.nav').toggleClass('navclose');
+		$('body').toggleClass('toggleoverflow');
+		if ($(window).scrollTop() > 0) {
+			$('#homelogo a').toggleClass('logoonhome');
+		}
+		
+		
 	});
 	$('.accordion').click(function () {
 		$('.content').toggleClass('movebottom');
@@ -33,6 +39,34 @@ $(document).ready(function () {
 			$('.nav').toggleClass('navclose');
 		}
 	});
+	// LOGO INVISIBLE WHEN NO SCROLL//
+	$(window).scroll(function () {
+		console.log($(window).scrollTop());
+		if ($(window).scrollTop() === 0) {
+			$('#homelogo a').addClass('logoonhome');
+		}
+		else{
+			
+			$.fn.scrollStopped = function (callback) {
+				var that = this
+					, $this = $(that);
+				$this.scroll(function (ev) {
+					$('#homelogo a').removeClass('logoonhome');
+					$('#homelogo a').addClass('fadein');
+					clearTimeout($this.data('scrollTimeout'));
+					$this.data('scrollTimeout', setTimeout(callback.bind(that), 250, ev));
+				});
+			};
+			$(window).scrollStopped(function (ev) {
+				console.log(ev);
+				if ($(window).scrollTop() === 0) {
+			$('#homelogo a').addClass('logoonhome');
+		}
+				$('#homelogo a').removeClass('fadein');
+				$('#homelogo a').addClass('fadeout');
+			});
+		};
+	});
 	$('#homelogo a').click(function () {
 		$('#button').removeClass('open');
 		$('.content').removeClass('animatemain');
@@ -40,6 +74,7 @@ $(document).ready(function () {
 		$('.nav').removeClass('navopen');
 		$('.nav').addClass('navclose');
 	});
+	//LOGO BECOMES INVISBLE WHEN NO SCROLL//
 	var codeElements = document.getElementsByTagName("code");
 	var i = codeElements.length;
 	var delimiter = "clicking on";

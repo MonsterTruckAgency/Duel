@@ -91,7 +91,21 @@
 	-webkit-transform: translateY(-7.5px) rotate(-135deg);
 	transform: translateY(-7.5px) rotate(-135deg);
 }
-
+.fadeout{
+	opacity:0;
+	transition: opacity .25s ease-in-out;
+}
+.fadein{
+	opacity:1;
+	transition: opacity .25s ease-in-out;
+}
+.logoonhome{
+	opacity:1!important;
+	transition: opacity .25s ease-in-out;
+}
+.toggleoverflow{
+	overflow-y: hidden;
+}
 .nav {
 	width: 100%;
 	right: 0;
@@ -113,7 +127,7 @@
 	justify-content: space-around;
 	padding-bottom: 10%;
 	visibility: visible;
-	padding-top: 30px;
+	padding-top: 50px;
 }
 
 .navclose {
@@ -132,7 +146,7 @@
 	-moz-transform: translateY(0%);
 	-moz-transition: .6s;
 	transform: translateY(0%);
-	height: 90vh;
+	height: 85vh;
 }
 
 code {

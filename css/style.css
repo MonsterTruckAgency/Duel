@@ -141,7 +141,15 @@ section {
 
 
 /** community **/
-
+.navmobile .communityicons{
+	margin:0;
+	padding-bottom: 0;
+}
+.navmobile a{
+	margin-top:0!important;
+	margin-bottom: 0!important;
+	
+}
 .communityicons {
 	font-size: 3rem;
 	text-align: right;
@@ -166,7 +174,7 @@ section {
 
 .communityicons a {
 	margin-left: 0!important;
-	margin: 7%
+	margin: 7%;
 }
 
 .fa-facebook-square {
@@ -1086,7 +1094,7 @@ video {
 		height: auto!important;
 	}
 	.backgroundslider {
-		min-height: auto;
+		min-height: unset;
 	}
 	.backgroundslider > div {
 		position: inherit;
