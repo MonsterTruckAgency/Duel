@@ -400,7 +400,9 @@ i.fa-twitter-square {
 	-webkit-box-align: center;
 	-ms-flex-align: center;
 	align-items: center;
-	padding:5%;
+	padding-top: 5%;
+	padding-bottom: 5%;
+	
 }
 
 .vidplayer {
@@ -434,7 +436,7 @@ i.fa-twitter-square {
 }
 
 .vidplayer .flex-direction-nav a::before {
-	font-size: 1.4vw;
+	/*font-size: 1.4vw;*/
 }
 
 
@@ -904,13 +906,18 @@ video {
 	box-sizing: border-box;
 }
 
-
+.flex-direction-nav a::before{
+		font-size: 100%;
+	}
 /*
 
 
 /************************************************************************************************************** REPONSIVE*********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
 
 @media (max-width: 768px) {
+	#videos .wrap{
+		padding:5%;
+	}
 	#photos .flex-caption {
 		font-size: .7em;
 	}
@@ -1012,7 +1019,7 @@ video {
 	}
 	/****************************************************************videos**********************************/
 	.vidplayer .flex-direction-nav a::before {
-		font-size: 1.5rem;
+		/*font-size: 1.5rem;*/
 	}
 	.vidplayer .flex-direction-nav {
 		-webkit-transform: rotate(90deg);
@@ -1062,9 +1069,11 @@ video {
 		padding-top: 3%;
 	}
 	#photos .flex-direction-nav a::before {
-		font-size: 1.5rem;
+		/*font-size: 1.5rem;*/
 		color: grey;
 	}
+	
+	
 	/*BIO*/
 	#about .wrap {
 		margin: 0 auto;
