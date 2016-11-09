@@ -141,15 +141,17 @@ section {
 
 
 /** community **/
-.navmobile .communityicons{
-	margin:0;
+
+.navmobile .communityicons {
+	margin: 0;
 	padding-bottom: 0;
 }
-.navmobile a{
-	margin-top:0!important;
+
+.navmobile a {
+	margin-top: 0!important;
 	margin-bottom: 0!important;
-	
 }
+
 .communityicons {
 	font-size: 3rem;
 	text-align: right;
@@ -382,6 +384,11 @@ i.fa-twitter-square {
 	background-color: black;
 	color: white;
 	height: 100vh;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	align-content: center;
+	justify-content: center;
 }
 
 #videos .flexslider {
@@ -390,19 +397,8 @@ i.fa-twitter-square {
 }
 
 #videos .wrap {
-	display: -webkit-box;
-	display: -ms-flexbox;
-	display: flex;
-	-webkit-box-orient: horizontal;
-	-webkit-box-direction: normal;
-	-ms-flex-direction: row;
-	flex-direction: row;
-	-webkit-box-align: center;
-	-ms-flex-align: center;
-	align-items: center;
-	padding-top: 5%;
-	padding-bottom: 5%;
-	
+	width: 100%;
+	height: auto;
 }
 
 .vidplayer {
@@ -459,7 +455,7 @@ video {
 }*/
 
 #videos .flexslider .slides > li {
-	padding-top: 1px
+	
 }
 
 #videos iframe {
@@ -479,7 +475,7 @@ video {
 .titlewrap {
 	width: 100%;
 	text-align: center;
-	padding-top: 2%;
+
 }
 
 .videotitle {
@@ -488,7 +484,7 @@ video {
 	width: 100%;
 	text-align: center;
 	padding-bottom: 0%;
-	padding-top: 0%;
+	padding-top: 10px;
 	letter-spacing: .2rem;
 }
 
@@ -906,17 +902,19 @@ video {
 	box-sizing: border-box;
 }
 
-.flex-direction-nav a::before{
-		font-size: 100%;
-	}
+.flex-direction-nav a::before {
+	font-size: 100%;
+}
+
+
 /*
 
 
 /************************************************************************************************************** REPONSIVE*********************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
 
 @media (max-width: 768px) {
-	#videos .wrap{
-		padding:5%;
+	#videos .wrap {
+		padding: 5%;
 	}
 	#photos .flex-caption {
 		font-size: .7em;
@@ -1038,8 +1036,7 @@ video {
 	}
 	.videotitle {
 		width: 100%;
-		padding: 0;
-		margin: 0;
+		
 	}
 	.itunes {
 		padding: 0;
@@ -1051,10 +1048,9 @@ video {
 		padding-bottom: 200px!important;
 	}*/
 	/* photos*/
-	#photos .wrap {
+	#photos .wrap,#videos .wrap {
 		padding-top: 0%;
-		padding: 5%;
-	
+		padding: 20px;
 	}
 	#slider {
 		padding-left: 0;
@@ -1072,8 +1068,6 @@ video {
 		/*font-size: 1.5rem;*/
 		color: grey;
 	}
-	
-	
 	/*BIO*/
 	#about .wrap {
 		margin: 0 auto;
@@ -1095,7 +1089,7 @@ video {
 		height: 10%;
 	}
 	#videos .flexslider {
-		margin-bottom: 20px !important;
+		
 		margin-left: auto!important;
 	}
 	.wrap {
@@ -1122,7 +1116,4 @@ video {
 		width: 90%;
 		margin-left: 10%;
 	}
-
-
-
 }

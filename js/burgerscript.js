@@ -29,6 +29,7 @@ $(document).ready(function () {
 	});
 	var mobilenavlinks = $('.navmobile li a');
 	mobilenavlinks.click(function (event) {
+		
 		var targ = $(event.target);
 		if (targ.hasClass('accordion')) {}
 		else if (targ.not('.accordion')) {
@@ -37,6 +38,8 @@ $(document).ready(function () {
 			$('.content').toggleClass('animateupmain');
 			$('.nav').toggleClass('navopen');
 			$('.nav').toggleClass('navclose');
+			$('body').toggleClass('toggleoverflow');
+			
 		}
 	});
 	// LOGO INVISIBLE WHEN NO SCROLL//
@@ -74,7 +77,7 @@ $(document).ready(function () {
 		$('.nav').removeClass('navopen');
 		$('.nav').addClass('navclose');
 	});
-	//LOGO BECOMES INVISBLE WHEN NO SCROLL//
+
 	var codeElements = document.getElementsByTagName("code");
 	var i = codeElements.length;
 	var delimiter = "clicking on";
