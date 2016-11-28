@@ -208,10 +208,13 @@ i.fa-twitter-square {
 
 .sectionacheter {
 	width: 35%;
-	margin-top: 28% !important;
-	margin-bottom: 8%;
 	float: left;
 	text-align: center;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
 }
 
 .sectionacheter a {
@@ -236,7 +239,7 @@ i.fa-twitter-square {
 	-ms-flex-align: center;
 	align-items: center;
 	padding-bottom: 3%;
-	margin-left: 30%;
+	margin-left: 55%;
 	width: 100%;
 }
 
@@ -270,20 +273,27 @@ i.fa-twitter-square {
 	min-height: 100vh;
 	padding-top: 0%;
 	background-color: #f4f1ed;
+	height:100vh;
+}
+
+#music2 .wrap{
+	height:100%;
 }
 
 .gun {
 	width: 54%;
 	margin-left: 5%;
-	padding-top: 2%;
+	height:100%;
 	float: left;
+	display:flex;
+	flex-direction: column;
+	justify-content: center;
 }
 
 .gun img {
 	width: 100%;
-	<<<<<<< Updated upstream padding-right: 5%;
-	=======padding-left: 5%;
-	>>>>>>> Stashed changes
+
+	
 }
 
 
@@ -973,6 +983,7 @@ padding-top: 15px;
 		-webkit-box-align: center;
 		-ms-flex-align: center;
 		align-items: center;
+		height:auto;
 	}
 	.sectionacheter article {
 		width: 70%;
@@ -997,6 +1008,7 @@ padding-top: 15px;
 		-webkit-box-ordinal-group: 2;
 		-ms-flex-order: 1;
 		order: 1;
+		height:auto;
 	}
 	.gun img {
 		max-width: 90%;
